@@ -23,7 +23,7 @@ public class DashboardFragment extends Fragment {
 
     FragmentDashboardBinding binding;
     ArrayList<DashboardModel> list = new ArrayList<>();
-    String[] data = new String[]{"Logs", "Toast", "Button"};
+    String[] data = new String[]{"Logs", "Toast", "Button", "Text Watcher"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;

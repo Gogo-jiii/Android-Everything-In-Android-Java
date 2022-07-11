@@ -19,9 +19,13 @@
         <action
             android:id="@+id/action_dashboardFragment_to_button_nav_graph"
             app:destination="@id/button_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_textwatcher_nav_graph"
+            app:destination="@id/textwatcher_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
     <include app:graph="@navigation/toast_nav_graph" />
     <include app:graph="@navigation/button_nav_graph" />
+    <include app:graph="@navigation/textwatcher_nav_graph" />
 </navigation>

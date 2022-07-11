@@ -55,6 +55,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
                     case 0 : navController.navigate(R.id.action_dashboardFragment_to_logs_nav_graph); break;
                     case 1 : navController.navigate(R.id.action_dashboardFragment_to_toast_nav_graph); break;
                     case 2 : navController.navigate(R.id.action_dashboardFragment_to_button_nav_graph); break;
+                    case 3 : navController.navigate(R.id.action_dashboardFragment_to_textwatcher_nav_graph); break;
                 }
             });
         }
