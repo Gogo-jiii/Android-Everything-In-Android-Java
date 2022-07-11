@@ -1,4 +1,4 @@
-package com.example.button;
+package com.example.snackbar;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,36 +6,33 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.button.databinding.RowItemBinding;
+import com.example.snackbar.databinding.RowItemBinding;
 
 import java.util.ArrayList;
 
-public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ViewHolder> {
+public class SnackbarAdapter extends RecyclerView.Adapter<SnackbarAdapter.ViewHolder> {
 
-    private final ArrayList<ButtonModel> data;
-    private final NavController navController;
+    private final ArrayList<SnackbarModel> data;
     OnRecyclerviewItemClickListener recyclerviewItemClickListener;
 
-    public ButtonAdapter(ArrayList<ButtonModel> data, Activity activity, Fragment fragment) {
+    public SnackbarAdapter(ArrayList<SnackbarModel> data, Activity activity, Fragment context) {
         this.data = data;
-        navController = Navigation.findNavController(activity, R.id.fragmentContainerView);
-        recyclerviewItemClickListener = (OnRecyclerviewItemClickListener) fragment;
+        recyclerviewItemClickListener = (OnRecyclerviewItemClickListener) context;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
         return new ViewHolder(RowItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        ButtonModel model = data.get(position);
+        SnackbarModel model = data.get(position);
         holder.binding.textView.setText(model.getItemName());
     }
 

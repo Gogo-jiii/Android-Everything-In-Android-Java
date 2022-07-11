@@ -42,5 +42,6 @@ dependencies {
     implementation project(':app:toast')
     implementation project(':app:button')
     implementation project(':app:textwatcher')
+    implementation project(':app:snackbar')
 
 }

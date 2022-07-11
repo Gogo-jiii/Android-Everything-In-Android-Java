@@ -19,7 +19,7 @@ import com.example.commonmodule.ToolbarManager;
 import java.util.ArrayList;
 
 
-public class ButtonFragment extends Fragment{
+public class ButtonFragment extends Fragment implements ButtonAdapter.OnRecyclerviewItemClickListener {
 
     FragmentButtonBinding binding;
     ArrayList<ButtonModel> list = new ArrayList<>();
@@ -49,7 +49,7 @@ public class ButtonFragment extends Fragment{
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        ButtonAdapter myAdapter = new ButtonAdapter(getData(), getActivity());
+        ButtonAdapter myAdapter = new ButtonAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -68,5 +68,28 @@ public class ButtonFragment extends Fragment{
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public void onRecyclerviewItemClick(int type) {
+        switch (ButtonType.getType(type)) {
+            case ON_CLICK_LISTENER:
+                navController.navigate(R.id.action_buttonFragment_to_buttonOnClickListenerFragment);
+                break;
+            case MULTIPLE_ON_CLICK_LISTENER:
+                navController.navigate(R.id.action_buttonFragment_to_multipleButtonsOnClickListenerFragment);
+                break;
+        }
+    }
+
+    public enum ButtonType {
+        ON_CLICK_LISTENER,
+        MULTIPLE_ON_CLICK_LISTENER;
+
+        private static ButtonType[] list = ButtonType.values();
+
+        public static ButtonType getType(int i) {
+            return list[i];
+        }
     }
 }

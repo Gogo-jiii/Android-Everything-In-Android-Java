@@ -1,9 +1,11 @@
 package com.example.toast;
 
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.toast.databinding.RowItemBinding;
@@ -12,17 +14,12 @@ import java.util.ArrayList;
 
 public class ToastAdapter extends RecyclerView.Adapter<ToastAdapter.ViewHolder> {
 
-    enum ToastType {
-        NORMAL_TOAST,
-        CUSTOM_TOAST
-    }
-
     private final ArrayList<ToastModel> data;
-    OnRecyclerviewItemClickListener onRecyclerviewItemClick;
+    OnRecyclerviewItemClickListener recyclerviewItemClickListener;
 
-    public ToastAdapter(ArrayList<ToastModel> data, ToastFragment context) {
+    public ToastAdapter(ArrayList<ToastModel> data, Activity activity, Fragment context) {
         this.data = data;
-        onRecyclerviewItemClick = (OnRecyclerviewItemClickListener) context;
+        recyclerviewItemClickListener = (OnRecyclerviewItemClickListener) context;
     }
 
     @NonNull
@@ -51,20 +48,11 @@ public class ToastAdapter extends RecyclerView.Adapter<ToastAdapter.ViewHolder> 
             super(view.getRoot());
             binding = view;
 
-            itemView.setOnClickListener(v -> {
-                switch (getAdapterPosition()) {
-                    case 0:
-                        onRecyclerviewItemClick.onRecyclerviewItemClick(ToastType.NORMAL_TOAST);
-                        break;
-                    case 1:
-                        onRecyclerviewItemClick.onRecyclerviewItemClick(ToastType.CUSTOM_TOAST);
-                        break;
-                }
-            });
+            itemView.setOnClickListener(v -> recyclerviewItemClickListener.onRecyclerviewItemClick(getAdapterPosition()));
         }
     }
 
     interface OnRecyclerviewItemClickListener {
-        void onRecyclerviewItemClick(ToastType toastType);
+        void onRecyclerviewItemClick(int toastType);
     }
 }

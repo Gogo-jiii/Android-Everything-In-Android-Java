@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,10 +18,12 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
 
     private final ArrayList<DashboardModel> data;
     private final NavController navController;
+    OnRecyclerviewItemClickListener recyclerviewItemClickListener;
 
-    public DashboardAdapter(ArrayList<DashboardModel> data, Activity activity) {
+    public DashboardAdapter(ArrayList<DashboardModel> data, Activity activity, Fragment fragment) {
         this.data = data;
         navController = Navigation.findNavController(activity, R.id.fragmentContainerView);
+        recyclerviewItemClickListener = (OnRecyclerviewItemClickListener) fragment;
     }
 
     @NonNull
@@ -50,14 +53,12 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
             super(view.getRoot());
             binding = view;
 
-            itemView.setOnClickListener(v -> {
-                switch (getAdapterPosition()){
-                    case 0 : navController.navigate(R.id.action_dashboardFragment_to_logs_nav_graph); break;
-                    case 1 : navController.navigate(R.id.action_dashboardFragment_to_toast_nav_graph); break;
-                    case 2 : navController.navigate(R.id.action_dashboardFragment_to_button_nav_graph); break;
-                    case 3 : navController.navigate(R.id.action_dashboardFragment_to_textwatcher_nav_graph); break;
-                }
-            });
+            itemView.setOnClickListener(v -> recyclerviewItemClickListener.onRecyclerviewItemClick(getAdapterPosition()));
         }
     }
+
+    interface OnRecyclerviewItemClickListener {
+        void onRecyclerviewItemClick(int type);
+    }
+
 }

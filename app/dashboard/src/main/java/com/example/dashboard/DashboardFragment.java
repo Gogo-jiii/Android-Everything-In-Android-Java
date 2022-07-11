@@ -19,11 +19,11 @@ import com.example.dashboard.databinding.FragmentDashboardBinding;
 import java.util.ArrayList;
 
 
-public class DashboardFragment extends Fragment {
+public class DashboardFragment extends Fragment implements DashboardAdapter.OnRecyclerviewItemClickListener {
 
     FragmentDashboardBinding binding;
     ArrayList<DashboardModel> list = new ArrayList<>();
-    String[] data = new String[]{"Logs", "Toast", "Button", "Text Watcher"};
+    String[] data = new String[]{"Logs", "Toast", "Button", "Text Watcher", "Snackbar"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -49,7 +49,7 @@ public class DashboardFragment extends Fragment {
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        DashboardAdapter myAdapter = new DashboardAdapter(getData(), getActivity());
+        DashboardAdapter myAdapter = new DashboardAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -69,5 +69,40 @@ public class DashboardFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public void onRecyclerviewItemClick(int type) {
+        switch (DashboardType.getType(type)) {
+            case LOGS:
+                navController.navigate(R.id.action_dashboardFragment_to_logs_nav_graph);
+                break;
+            case TOAST:
+                navController.navigate(R.id.action_dashboardFragment_to_toast_nav_graph);
+                break;
+            case BUTTON:
+                navController.navigate(R.id.action_dashboardFragment_to_button_nav_graph);
+                break;
+            case TEXT_WATCHER:
+                navController.navigate(R.id.action_dashboardFragment_to_textwatcher_nav_graph);
+                break;
+            case SNAKCBAR:
+                navController.navigate(R.id.action_dashboardFragment_to_snackbar_nav_graph);
+                break;
+        }
+    }
+
+    public enum DashboardType {
+        LOGS,
+        TOAST,
+        BUTTON,
+        TEXT_WATCHER,
+        SNAKCBAR;
+
+        private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
+
+        public static DashboardFragment.DashboardType getType(int i) {
+            return list[i];
+        }
     }
 }

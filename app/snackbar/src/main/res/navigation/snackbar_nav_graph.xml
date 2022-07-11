@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snackbar_nav_graph"
+    app:startDestination="@id/snackbarFragment">
+
+    <fragment
+        android:id="@+id/snackbarFragment"
+        android:name="com.example.snackbar.SnackbarFragment"
+        android:label="Snackbar"
+        tools:layout="@layout/fragment_snackbar" />
+</navigation>

@@ -54,7 +54,7 @@ public class ToastFragment extends Fragment implements ToastAdapter.OnRecyclervi
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        ToastAdapter myAdapter = new ToastAdapter(getData(), this);
+        ToastAdapter myAdapter = new ToastAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -76,8 +76,8 @@ public class ToastFragment extends Fragment implements ToastAdapter.OnRecyclervi
     }
 
     @Override
-    public void onRecyclerviewItemClick(ToastAdapter.ToastType toastType) {
-        switch (toastType) {
+    public void onRecyclerviewItemClick(int type) {
+        switch (ToastType.getType(type)) {
             case NORMAL_TOAST:
                 showNormaltoast();
                 break;
@@ -88,7 +88,7 @@ public class ToastFragment extends Fragment implements ToastAdapter.OnRecyclervi
     }
 
     private void showCustomToast() {
-        @NonNull CustomToastLayoutBinding view = CustomToastLayoutBinding.inflate(LayoutInflater.from(getContext()), (ViewGroup) binding.getRoot(), false);
+        @NonNull CustomToastLayoutBinding view = CustomToastLayoutBinding.inflate(LayoutInflater.from(getContext()), binding.getRoot(), false);
         ConstraintLayout root = view.getRoot();
 
         View customView = getLayoutInflater().inflate(R.layout.custom_toast_layout, root);
@@ -103,4 +103,16 @@ public class ToastFragment extends Fragment implements ToastAdapter.OnRecyclervi
     private void showNormaltoast() {
         Toast.makeText(getContext(), "This is a normal toast...", Toast.LENGTH_SHORT).show();
     }
+
+    public enum ToastType {
+        NORMAL_TOAST,
+        CUSTOM_TOAST;
+
+        private static final ToastType[] list = ToastType.values();
+
+        public static ToastType getType(int i) {
+            return list[i];
+        }
+    }
+
 }
