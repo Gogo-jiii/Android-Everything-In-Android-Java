@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Logs</string>
+    <string name="show_logs">Show Logs</string>
+</resources>
