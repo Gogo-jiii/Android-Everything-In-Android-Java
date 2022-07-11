@@ -40,8 +40,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(':app:commonmodule')
-    implementation project(':app:logs')
-    implementation project(':app:toast')
-    implementation project(':app:button')
-
 }

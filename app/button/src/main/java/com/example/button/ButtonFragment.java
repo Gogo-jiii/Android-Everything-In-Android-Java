@@ -1,4 +1,4 @@
-package com.example.dashboard;
+package com.example.button;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,17 +13,17 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.button.databinding.FragmentButtonBinding;
 import com.example.commonmodule.ToolbarManager;
-import com.example.dashboard.databinding.FragmentDashboardBinding;
 
 import java.util.ArrayList;
 
 
-public class DashboardFragment extends Fragment {
+public class ButtonFragment extends Fragment{
 
-    FragmentDashboardBinding binding;
-    ArrayList<DashboardModel> list = new ArrayList<>();
-    String[] data = new String[]{"Logs", "Toast", "Button"};
+    FragmentButtonBinding binding;
+    ArrayList<ButtonModel> list = new ArrayList<>();
+    String[] data = new String[]{"Button On Click Listener", "Multiple Buttons On Click Listener"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -31,8 +31,8 @@ public class DashboardFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        // Inflate the layout for this fragment
+        binding = FragmentButtonBinding.inflate(inflater, container, false);
         navController = Navigation.findNavController(requireActivity(), R.id.fragmentContainerView);
 
         setupToolbar();
@@ -43,27 +43,26 @@ public class DashboardFragment extends Fragment {
     private void setupToolbar() {
         toolbarManager = ToolbarManager.getInstance();
         toolbarManager.setupToolbar(getActivity(), navController, null, binding.toolbar,
-                false);
+                true);
     }
 
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        DashboardAdapter myAdapter = new DashboardAdapter(getData(), getActivity());
+        ButtonAdapter myAdapter = new ButtonAdapter(getData(), getActivity());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
     }
 
-    private ArrayList<DashboardModel> getData() {
+    private ArrayList<ButtonModel> getData() {
         list.clear();
 
         for (String item : data) {
-            list.add(new DashboardModel(item));
+            list.add(new ButtonModel(item));
         }
         return list;
     }
-
 
     @Override
     public void onDestroyView() {

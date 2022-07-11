@@ -48,7 +48,7 @@ public class ToastFragment extends Fragment implements ToastAdapter.OnRecyclervi
     private void setupToolbar() {
         toolbarManager = ToolbarManager.getInstance();
         toolbarManager.setupToolbar(getActivity(), navController, null, binding.toolbar,
-                false);
+                true);
     }
 
     private void prepareRecyclerView() {

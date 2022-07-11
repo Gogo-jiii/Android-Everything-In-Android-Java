@@ -40,5 +40,6 @@ dependencies {
     implementation project(':app:dashboard')
     implementation project(':app:logs')
     implementation project(':app:toast')
+    implementation project(':app:button')
 
 }

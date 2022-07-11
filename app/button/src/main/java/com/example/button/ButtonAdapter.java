@@ -1,4 +1,4 @@
-package com.example.dashboard;
+package com.example.button;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -9,16 +9,16 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dashboard.databinding.RowItemBinding;
+import com.example.button.databinding.RowItemBinding;
 
 import java.util.ArrayList;
 
-public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.ViewHolder> {
+public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ViewHolder> {
 
-    private final ArrayList<DashboardModel> data;
+    private final ArrayList<ButtonModel> data;
     private final NavController navController;
 
-    public DashboardAdapter(ArrayList<DashboardModel> data, Activity activity) {
+    public ButtonAdapter(ArrayList<ButtonModel> data, Activity activity) {
         this.data = data;
         navController = Navigation.findNavController(activity, R.id.fragmentContainerView);
     }
@@ -26,14 +26,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         return new ViewHolder(RowItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        DashboardModel model = data.get(position);
+        ButtonModel model = data.get(position);
         holder.binding.textView.setText(model.getItemName());
     }
 
@@ -51,12 +50,16 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
             binding = view;
 
             itemView.setOnClickListener(v -> {
-                switch (getAdapterPosition()){
-                    case 0 : navController.navigate(R.id.action_dashboardFragment_to_logs_nav_graph); break;
-                    case 1 : navController.navigate(R.id.action_dashboardFragment_to_toast_nav_graph); break;
-                    case 2 : navController.navigate(R.id.action_dashboardFragment_to_button_nav_graph); break;
+                switch (getAdapterPosition()) {
+                    case 0:
+                        navController.navigate(R.id.action_buttonFragment_to_buttonOnClickListenerFragment);
+                        break;
+                    case 1:
+                        navController.navigate(R.id.action_buttonFragment_to_multipleButtonsOnClickListenerFragment);
+                        break;
                 }
             });
         }
     }
+
 }

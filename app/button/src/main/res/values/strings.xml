@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Button</string>
+    <string name="text">Text</string>
+    <string name="button_on_click_listener">button on click listener</string>
+    <string name="first_button">first button</string>
+    <string name="second_button">second button</string>
+    <string name="third_button">third button</string>
+</resources>
