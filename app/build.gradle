@@ -43,5 +43,5 @@ dependencies {
     implementation project(':app:button')
     implementation project(':app:textwatcher')
     implementation project(':app:snackbar')
-
+    implementation project(':app:checkbox')
 }

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Checkbox</string>
+    <string name="custom_checkbox">Custom Checkbox</string>
+    <string name="increase_checkbox_size">Increase Checkbox Size</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="checkbox_click_listeners">Checkbox Click Listeners</string>
+</resources>
