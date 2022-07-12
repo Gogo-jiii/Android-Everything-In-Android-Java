@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/app/commonmodule" />
             <option value="$PROJECT_DIR$/app/dashboard" />
             <option value="$PROJECT_DIR$/app/logs" />
+            <option value="$PROJECT_DIR$/app/radiobutton" />
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/toast" />

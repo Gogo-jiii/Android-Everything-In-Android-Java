@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_checkbox_nav_graph"
             app:destination="@id/checkbox_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_radiobutton_nav_graph"
+            app:destination="@id/radiobutton_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
@@ -36,4 +39,5 @@
     <include app:graph="@navigation/textwatcher_nav_graph" />
     <include app:graph="@navigation/snackbar_nav_graph" />
     <include app:graph="@navigation/checkbox_nav_graph" />
+    <include app:graph="@navigation/radiobutton_nav_graph" />
 </navigation>

@@ -46,4 +46,5 @@ dependencies {
     implementation project(':app:textwatcher')
     implementation project(':app:snackbar')
     implementation project(':app:checkbox')
+    implementation project(':app:radiobutton')
 }
