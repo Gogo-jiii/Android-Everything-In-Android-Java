@@ -1,12 +1,11 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.everythinginandroidjava"
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -25,6 +24,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -37,15 +40,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(':app:commonmodule')
-    implementation project(':app:dashboard')
-    implementation project(':app:logs')
-    implementation project(':app:toast')
-    implementation project(':app:button')
-    implementation project(':app:textwatcher')
-    implementation project(':app:snackbar')
-    implementation project(':app:checkbox')
-    implementation project(':app:radiobutton')
-    implementation project(':app:togglebutton')
-    implementation project(':app:edittext')
-    implementation project(':app:autocompletetextview')
+
 }

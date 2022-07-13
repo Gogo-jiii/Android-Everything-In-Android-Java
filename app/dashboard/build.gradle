@@ -49,4 +49,6 @@ dependencies {
     implementation project(':app:radiobutton')
     implementation project(':app:togglebutton')
     implementation project(':app:edittext')
+    implementation project(':app:autocompletetextview')
+
 }

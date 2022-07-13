@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/autocompletetextview/src/main/res/layout/activity_auto_complete_textview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/autocompletetextview/src/main/res/layout/fragment_autocomplete_textview.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/button/src/main/res/layout/activity_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/button/src/main/res/layout/fragment_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/button/src/main/res/layout/fragment_button_on_click_listener.xml" value="0.2" />

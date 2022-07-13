@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/autocomplete_textview_nav_graph"
+    app:startDestination="@id/autocompleteTextviewFragment">
+
+    <fragment
+        android:id="@+id/autocompleteTextviewFragment"
+        android:name="com.example.autocompletetextview.AutocompleteTextviewFragment"
+        android:label="Auto Complete Textview"
+        tools:layout="@layout/fragment_autocomplete_textview" />
+</navigation>
