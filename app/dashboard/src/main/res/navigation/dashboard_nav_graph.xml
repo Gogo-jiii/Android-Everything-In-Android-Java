@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_togglebutton_nav_graph"
             app:destination="@id/togglebutton_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_edit_text_nav_graph"
+            app:destination="@id/edit_text_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
@@ -44,4 +47,5 @@
     <include app:graph="@navigation/checkbox_nav_graph" />
     <include app:graph="@navigation/radiobutton_nav_graph" />
     <include app:graph="@navigation/togglebutton_nav_graph" />
+    <include app:graph="@navigation/edit_text_nav_graph" />
 </navigation>

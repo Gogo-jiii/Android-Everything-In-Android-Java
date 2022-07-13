@@ -55,7 +55,7 @@ public class SnackbarFragment extends Fragment implements SnackbarAdapter.OnRecy
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        SnackbarAdapter myAdapter = new SnackbarAdapter(getData(), getActivity(),this);
+        SnackbarAdapter myAdapter = new SnackbarAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -92,12 +92,15 @@ public class SnackbarFragment extends Fragment implements SnackbarAdapter.OnRecy
     private void showNormalSnackbar() {
         Snackbar snackbar = Snackbar.make(binding.getRoot(), "Snackbar",
                 Snackbar.LENGTH_INDEFINITE);
-        snackbar.setAction("OK", view -> Toast.makeText(getContext(), "Clicked.",
-                Toast.LENGTH_SHORT).show());
+        snackbar.setAction("OK", view -> {
+            if (null != getContext())
+                Toast.makeText(getContext(), "Clicked.", Toast.LENGTH_SHORT).show();
+        });
         snackbar.setActionTextColor(getResources().getColor(R.color.white));
         snackbar.setTextColor(getResources().getColor(R.color.white));
         snackbar.setBackgroundTint(getResources().getColor(R.color.purple_500));
         snackbar.show();
+
     }
 
     private void showCustomSnackbar() {
@@ -112,7 +115,9 @@ public class SnackbarFragment extends Fragment implements SnackbarAdapter.OnRecy
 
         Button button = customView.findViewById(R.id.button);
         button.setOnClickListener(view1 -> {
-            Toast.makeText(getContext(), "Dismiss.", Toast.LENGTH_SHORT).show();
+            if (null != getContext()) {
+                Toast.makeText(getContext(), "Dismiss.", Toast.LENGTH_SHORT).show();
+            }
             snackbar.dismiss();
         });
 

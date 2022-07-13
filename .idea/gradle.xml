@@ -15,6 +15,8 @@
             <option value="$PROJECT_DIR$/app/checkbox" />
             <option value="$PROJECT_DIR$/app/commonmodule" />
             <option value="$PROJECT_DIR$/app/dashboard" />
+            <option value="$PROJECT_DIR$/app/edittext" />
+            <option value="$PROJECT_DIR$/app/get_text_from_edit_text" />
             <option value="$PROJECT_DIR$/app/logs" />
             <option value="$PROJECT_DIR$/app/radiobutton" />
             <option value="$PROJECT_DIR$/app/snackbar" />
