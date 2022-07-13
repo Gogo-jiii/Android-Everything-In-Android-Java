@@ -23,7 +23,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
 
     FragmentDashboardBinding binding;
     ArrayList<DashboardModel> list = new ArrayList<>();
-    String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox", "Radio Button", "Toggle Button", "Autocomplete Textview"};
+    String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
+            "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -104,6 +105,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case AUTO_COMPLETE_TEXTVIEW:
                 navController.navigate(R.id.action_dashboardFragment_to_autocomplete_textview_nav_graph);
                 break;
+            case SPINNER:
+                navController.navigate(R.id.action_dashboardFragment_to_spinner_nav_graph);
+                break;
         }
     }
 
@@ -117,7 +121,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         CHECKBOX,
         RADIO_BUTTON,
         TOGGLE_BUTTON,
-        AUTO_COMPLETE_TEXTVIEW;
+        AUTO_COMPLETE_TEXTVIEW,
+        SPINNER;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

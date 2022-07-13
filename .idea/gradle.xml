@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/app/logs" />
             <option value="$PROJECT_DIR$/app/radiobutton" />
             <option value="$PROJECT_DIR$/app/snackbar" />
+            <option value="$PROJECT_DIR$/app/spinner" />
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/toast" />
             <option value="$PROJECT_DIR$/app/togglebutton" />

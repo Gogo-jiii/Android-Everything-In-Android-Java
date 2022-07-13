@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_autocomplete_textview_nav_graph"
             app:destination="@id/autocomplete_textview_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_spinner_nav_graph"
+            app:destination="@id/spinner_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
@@ -52,4 +55,5 @@
     <include app:graph="@navigation/togglebutton_nav_graph" />
     <include app:graph="@navigation/edit_text_nav_graph" />
     <include app:graph="@navigation/autocomplete_textview_nav_graph" />
+    <include app:graph="@navigation/spinner_nav_graph" />
 </navigation>
