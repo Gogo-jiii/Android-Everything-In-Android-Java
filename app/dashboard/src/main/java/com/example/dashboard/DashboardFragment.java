@@ -23,7 +23,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
 
     FragmentDashboardBinding binding;
     ArrayList<DashboardModel> list = new ArrayList<>();
-    String[] data = new String[]{"Logs", "Toast", "Button", "Text Watcher", "Snackbar", "Checkbox", "Radio Button"};
+    String[] data = new String[]{"Logs", "Toast", "Button", "Text Watcher", "Snackbar", "Checkbox", "Radio Button", "Toggle Button"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -95,6 +95,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case RADIO_BUTTON:
                 navController.navigate(R.id.action_dashboardFragment_to_radiobutton_nav_graph);
                 break;
+            case TOGGLE_BUTTON:
+                navController.navigate(R.id.action_dashboardFragment_to_togglebutton_nav_graph);
+                break;
         }
     }
 
@@ -105,7 +108,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         TEXT_WATCHER,
         SNAKCBAR,
         CHECKBOX,
-        RADIO_BUTTON;
+        RADIO_BUTTON,
+        TOGGLE_BUTTON;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

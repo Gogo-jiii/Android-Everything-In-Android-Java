@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/toast" />
+            <option value="$PROJECT_DIR$/app/togglebutton" />
           </set>
         </option>
       </GradleProjectSettings>

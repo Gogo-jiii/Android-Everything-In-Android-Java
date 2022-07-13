@@ -45,5 +45,5 @@ dependencies {
     implementation project(':app:snackbar')
     implementation project(':app:checkbox')
     implementation project(':app:radiobutton')
-
+    implementation project(':app:togglebutton')
 }
