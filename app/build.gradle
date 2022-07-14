@@ -50,5 +50,5 @@ dependencies {
     implementation project(':app:autocompletetextview')
     implementation project(':app:spinner')
     implementation project(':app:alertdialog')
-
+    implementation project(':app:ratingbar')
 }
