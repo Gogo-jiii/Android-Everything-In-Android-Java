@@ -53,5 +53,5 @@ dependencies {
     implementation project(':app:spinner')
     implementation project(':app:alertdialog')
     implementation project(':app:ratingbar')
-
+    implementation project(':app:seekbar')
 }

@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardElevation="16dp"
-    app:cardCornerRadius="16dp">
+    app:cardElevation="@dimen/_16sdp"
+    app:cardCornerRadius="@dimen/_16sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:padding="16dp"
+        android:padding="@dimen/_16sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

@@ -33,6 +33,8 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/radiobutton/src/main/res/layout/activity_radio_button.xml" value="0.1875" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/radiobutton/src/main/res/layout/fragment_radiobutton.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/ratingbar/src/main/res/layout/fragment_ratingbar.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/activity_seekbar.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/fragment_seekbar.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/snackbar/src/main/res/layout/activity_snackbar.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/snackbar/src/main/res/layout/custom_snackbar_layout.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/snackbar/src/main/res/layout/fragment_snackbar.xml" value="0.2" />
@@ -45,6 +47,7 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/toast/src/main/res/layout/custom_toast_layout.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/toast/src/main/res/layout/fragment_toast.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/toast/src/main/res/layout/row_item.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/activity_toggle_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/fragment_toggle_button.xml" value="0.2" />
       </map>
     </option>
