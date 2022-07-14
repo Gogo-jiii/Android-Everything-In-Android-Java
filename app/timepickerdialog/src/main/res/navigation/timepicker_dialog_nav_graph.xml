@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timepicker_dialog_nav_graph"
+    app:startDestination="@id/timePickerDialogFragment">
+
+    <fragment
+        android:id="@+id/timePickerDialogFragment"
+        android:name="com.example.timepickerdialog.TimePickerDialogFragment"
+        android:label="Timepicker Dialog"
+        tools:layout="@layout/fragment_time_picker_dialog" />
+</navigation>
