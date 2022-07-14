@@ -119,7 +119,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
                 navController.navigate(R.id.action_dashboardFragment_to_seekbar_nav_graph);
                 break;
             case PROGRESS_DIALOG:
-                navController.navigate(R.id.action_dashboardFragment_to_seekbar_nav_graph);
+                navController.navigate(R.id.action_dashboardFragment_to_progress_dialog_nav_graph);
                 break;
             case WEBVIEW:
                 navController.navigate(R.id.action_dashboardFragment_to_webview_nav_graph);

@@ -15,8 +15,6 @@ import androidx.navigation.Navigation;
 import com.example.commonmodule.ToolbarManager;
 import com.example.logs.databinding.FragmentLogsBinding;
 
-import java.util.Objects;
-
 
 public class LogsFragment extends Fragment {
 
@@ -49,5 +47,11 @@ public class LogsFragment extends Fragment {
         toolbarManager = ToolbarManager.getInstance();
         toolbarManager.setupToolbar(getActivity(), navController, null, binding.toolbar,
                 true);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

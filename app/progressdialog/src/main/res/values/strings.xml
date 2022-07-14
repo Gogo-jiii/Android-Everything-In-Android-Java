@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Progress Dialog</string>
+    <string name="show_progress_bar">Show Progress Bar</string>
+</resources>

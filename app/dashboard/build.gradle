@@ -55,4 +55,6 @@ dependencies {
     implementation project(':app:ratingbar')
     implementation project(':app:seekbar')
     implementation project(':app:webview')
+    implementation project(':app:progressdialog')
+
 }
