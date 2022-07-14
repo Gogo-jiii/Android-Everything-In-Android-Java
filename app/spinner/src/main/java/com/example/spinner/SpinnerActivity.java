@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.spinner.databinding.ActivitySpinnerBinding;
+
 import java.util.Objects;
 
 public class SpinnerActivity extends AppCompatActivity {
 
     private NavController navController;
+    private ActivitySpinnerBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spinner);
+        binding = ActivitySpinnerBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
         setupNaviagtion();

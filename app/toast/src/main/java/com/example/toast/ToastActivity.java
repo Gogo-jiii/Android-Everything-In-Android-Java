@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.toast.databinding.ActivityToastBinding;
+
 import java.util.Objects;
 
 public class ToastActivity extends AppCompatActivity {
 
     private NavController navController;
+    private ActivityToastBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toast);
+        binding = ActivityToastBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
         setupNaviagtion();

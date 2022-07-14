@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.edittext.databinding.ActivityEditTextBinding;
+
 import java.util.Objects;
 
 public class EditTextActivity extends AppCompatActivity {
 
     private NavController navController;
+    private ActivityEditTextBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_text);
+        binding = ActivityEditTextBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
         setupNaviagtion();

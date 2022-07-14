@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.alertdialog.databinding.ActivityAlertDialogBinding;
+
 import java.util.Objects;
 
 public class AlertDialogActivity extends AppCompatActivity {
 
     private NavController navController;
+    private ActivityAlertDialogBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alert_dialog);
+        binding = ActivityAlertDialogBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();//hides activity toolbar
         setupNaviagtion();
@@ -28,7 +32,8 @@ public class AlertDialogActivity extends AppCompatActivity {
         navController = Objects.requireNonNull(navHostFragment).getNavController();
     }
 
-    @Override public boolean onSupportNavigateUp() {
+    @Override
+    public boolean onSupportNavigateUp() {
         if (navController != null) {
             navController.navigateUp();
         }

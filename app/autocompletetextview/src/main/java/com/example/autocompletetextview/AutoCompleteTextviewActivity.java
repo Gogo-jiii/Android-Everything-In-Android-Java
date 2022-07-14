@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.autocompletetextview.databinding.ActivityAutoCompleteTextviewBinding;
+
 import java.util.Objects;
 
 public class AutoCompleteTextviewActivity extends AppCompatActivity {
 
     private NavController navController;
+    private ActivityAutoCompleteTextviewBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auto_complete_textview);
+        binding = ActivityAutoCompleteTextviewBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
         setupNaviagtion();
