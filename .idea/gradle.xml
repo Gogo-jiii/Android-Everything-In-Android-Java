@@ -28,6 +28,7 @@
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/toast" />
             <option value="$PROJECT_DIR$/app/togglebutton" />
+            <option value="$PROJECT_DIR$/app/webview" />
           </set>
         </option>
       </GradleProjectSettings>

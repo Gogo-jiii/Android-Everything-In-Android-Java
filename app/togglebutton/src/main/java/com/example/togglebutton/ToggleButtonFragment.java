@@ -50,4 +50,5 @@ public class ToggleButtonFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }
