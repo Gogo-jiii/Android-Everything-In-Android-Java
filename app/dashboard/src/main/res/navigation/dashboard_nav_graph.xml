@@ -61,6 +61,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_timepicker_dialog_nav_graph"
             app:destination="@id/timepicker_dialog_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_datepicker_dialog_nav_graph"
+            app:destination="@id/datepicker_dialog_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
@@ -80,4 +83,5 @@
     <include app:graph="@navigation/webview_nav_graph" />
     <include app:graph="@navigation/progress_dialog_nav_graph" />
     <include app:graph="@navigation/timepicker_dialog_nav_graph" />
+    <include app:graph="@navigation/datepicker_dialog_nav_graph" />
 </navigation>

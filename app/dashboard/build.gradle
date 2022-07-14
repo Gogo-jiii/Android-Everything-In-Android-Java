@@ -57,5 +57,5 @@ dependencies {
     implementation project(':app:webview')
     implementation project(':app:progressdialog')
     implementation project(':app:timepickerdialog')
-
+    implementation project(':app:datepickerdialog')
 }
