@@ -56,4 +56,6 @@ dependencies {
     implementation project(':app:progressdialog')
     implementation project(':app:timepickerdialog')
     implementation project(':app:datepickerdialog')
+    implementation project(':app:imageview')
+    implementation project(':app:textinputlayout')
 }

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TextInputLayout</string>
+    <string name="normal_layout">Normal layout</string>
+    <string name="outline">Outline</string>
+    <string name="icons">icons</string>
+    <string name="password_toggle">Password Toggle</string>
+    <string name="clear_text">Clear Text</string>
+    <string name="helper_text">Helper Text</string>
+    <string name="error">Error</string>
+    <string name="submit">Submit</string>
+    <string name="character_counter">Character Counter</string>
+</resources>

@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/app/datepickerdialog" />
             <option value="$PROJECT_DIR$/app/edittext" />
             <option value="$PROJECT_DIR$/app/get_text_from_edit_text" />
+            <option value="$PROJECT_DIR$/app/imageview" />
             <option value="$PROJECT_DIR$/app/logs" />
             <option value="$PROJECT_DIR$/app/progressdialog" />
             <option value="$PROJECT_DIR$/app/radiobutton" />
@@ -27,6 +28,7 @@
             <option value="$PROJECT_DIR$/app/seekbar" />
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/spinner" />
+            <option value="$PROJECT_DIR$/app/textinputlayout" />
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/timepickerdialog" />
             <option value="$PROJECT_DIR$/app/toast" />

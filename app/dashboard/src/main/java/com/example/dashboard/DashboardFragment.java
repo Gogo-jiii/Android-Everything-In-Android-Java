@@ -25,7 +25,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     ArrayList<DashboardModel> list = new ArrayList<>();
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
-            "Webview", "Timepicker Dialog", "Datepicker Dialog"};
+            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -130,6 +130,12 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case DATE_PICKER_DIALOG:
                 navController.navigate(R.id.action_dashboardFragment_to_datepicker_dialog_nav_graph);
                 break;
+            case IMAGEVIEW:
+                navController.navigate(R.id.action_dashboardFragment_to_imageview_nav_graph);
+                break;
+            case TEXT_INPUT_LAYOUT:
+                navController.navigate(R.id.action_dashboardFragment_to_textinput_layout_nav_graph);
+                break;
         }
     }
 
@@ -151,7 +157,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         PROGRESS_DIALOG,
         WEBVIEW,
         TIME_PICKER_DIALOG,
-        DATE_PICKER_DIALOG;
+        DATE_PICKER_DIALOG,
+        IMAGEVIEW,
+        TEXT_INPUT_LAYOUT;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

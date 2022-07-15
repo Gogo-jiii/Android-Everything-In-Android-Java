@@ -5,4 +5,5 @@
     <string name="first_button">first button</string>
     <string name="second_button">second button</string>
     <string name="third_button">third button</string>
+    <string name="round_cornered_button">Round Cornered Button</string>
 </resources>

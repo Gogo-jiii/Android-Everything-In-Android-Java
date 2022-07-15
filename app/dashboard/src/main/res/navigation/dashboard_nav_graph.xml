@@ -64,6 +64,12 @@
         <action
             android:id="@+id/action_dashboardFragment_to_datepicker_dialog_nav_graph"
             app:destination="@id/datepicker_dialog_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_imageview_nav_graph"
+            app:destination="@id/imageview_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_textinput_layout_nav_graph"
+            app:destination="@id/textinput_layout_nav_graph" />
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />
@@ -84,4 +90,6 @@
     <include app:graph="@navigation/progress_dialog_nav_graph" />
     <include app:graph="@navigation/timepicker_dialog_nav_graph" />
     <include app:graph="@navigation/datepicker_dialog_nav_graph" />
+    <include app:graph="@navigation/imageview_nav_graph" />
+    <include app:graph="@navigation/textinput_layout_nav_graph" />
 </navigation>

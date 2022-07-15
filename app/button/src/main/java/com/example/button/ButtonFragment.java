@@ -23,7 +23,7 @@ public class ButtonFragment extends Fragment implements ButtonAdapter.OnRecycler
 
     FragmentButtonBinding binding;
     ArrayList<ButtonModel> list = new ArrayList<>();
-    String[] data = new String[]{"Button On Click Listener", "Multiple Buttons On Click Listener"};
+    String[] data = new String[]{"Button On Click Listener", "Multiple Buttons On Click Listener", "Button Designs"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -79,12 +79,16 @@ public class ButtonFragment extends Fragment implements ButtonAdapter.OnRecycler
             case MULTIPLE_ON_CLICK_LISTENER:
                 navController.navigate(R.id.action_buttonFragment_to_multipleButtonsOnClickListenerFragment);
                 break;
+            case BUTTON_DESIGNS:
+                navController.navigate(R.id.action_buttonFragment_to_buttonDesignsFragment);
+                break;
         }
     }
 
     public enum ButtonType {
         ON_CLICK_LISTENER,
-        MULTIPLE_ON_CLICK_LISTENER;
+        MULTIPLE_ON_CLICK_LISTENER,
+        BUTTON_DESIGNS;
 
         private static ButtonType[] list = ButtonType.values();
 

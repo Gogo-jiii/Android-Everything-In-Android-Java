@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageview_nav_graph"
+    app:startDestination="@id/imageviewFragment">
+
+    <fragment
+        android:id="@+id/imageviewFragment"
+        android:name="com.example.imageview.ImageviewFragment"
+        android:label="Imageview"
+        tools:layout="@layout/fragment_imageview" />
+</navigation>

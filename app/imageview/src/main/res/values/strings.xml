@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Imageview</string>
+    <string name="round_imageview">Round Imageview</string>
+    <string name="square_imageview">Square Imageview</string>
+</resources>
