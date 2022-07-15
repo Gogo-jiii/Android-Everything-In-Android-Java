@@ -40,26 +40,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(':app:commonmodule')
-    implementation project(':app:logs')
-    implementation project(':app:toast')
-    implementation project(':app:button')
-    implementation project(':app:textwatcher')
-    implementation project(':app:snackbar')
-    implementation project(':app:checkbox')
-    implementation project(':app:radiobutton')
-    implementation project(':app:togglebutton')
-    implementation project(':app:edittext')
-    implementation project(':app:autocompletetextview')
-    implementation project(':app:spinner')
-    implementation project(':app:alertdialog')
-    implementation project(':app:ratingbar')
-    implementation project(':app:seekbar')
-    implementation project(':app:webview')
-    implementation project(':app:progressdialog')
-    implementation project(':app:timepickerdialog')
-    implementation project(':app:datepickerdialog')
-    implementation project(':app:imageview')
-    implementation project(':app:textinputlayout')
-    implementation project(':app:sharedpreference')
-
 }

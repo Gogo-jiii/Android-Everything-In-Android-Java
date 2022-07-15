@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shared Preference</string>
+    <string name="save_following_data_in_the_shared_preference_n_n_string_abc_n_integer_1_n_float_10_5_n_long_3_n_boolean_true_n_set_a_b_c">Save following data in the Shared Preference :\n\n*String : abc\n*Integer : 1\n*Float : 10.5\n*Long : 3\n*Boolean : true\n*Set : {a, b, c}</string>
+    <string name="save_data">Save Data</string>
+    <string name="get_data">get data</string>
+    <string name="result">Result</string>
+</resources>

@@ -25,7 +25,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     ArrayList<DashboardModel> list = new ArrayList<>();
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
-            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout"};
+            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -136,6 +136,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case TEXT_INPUT_LAYOUT:
                 navController.navigate(R.id.action_dashboardFragment_to_textinput_layout_nav_graph);
                 break;
+            case SHARED_PREFERENCE:
+                navController.navigate(R.id.action_dashboardFragment_to_shared_pref_nav_graph);
+                break;
         }
     }
 
@@ -159,7 +162,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         TIME_PICKER_DIALOG,
         DATE_PICKER_DIALOG,
         IMAGEVIEW,
-        TEXT_INPUT_LAYOUT;
+        TEXT_INPUT_LAYOUT,
+        SHARED_PREFERENCE;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

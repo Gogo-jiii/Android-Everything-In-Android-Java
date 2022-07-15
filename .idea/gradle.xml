@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/app/radiobutton" />
             <option value="$PROJECT_DIR$/app/ratingbar" />
             <option value="$PROJECT_DIR$/app/seekbar" />
+            <option value="$PROJECT_DIR$/app/sharedpreference" />
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/spinner" />
             <option value="$PROJECT_DIR$/app/textinputlayout" />
