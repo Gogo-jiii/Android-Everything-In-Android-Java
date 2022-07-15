@@ -73,6 +73,7 @@
         <action
             android:id="@+id/action_dashboardFragment_to_shared_pref_nav_graph"
             app:destination="@id/shared_pref_nav_graph" />
+
     </fragment>
 
     <include app:graph="@navigation/logs_nav_graph" />

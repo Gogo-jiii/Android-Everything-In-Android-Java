@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/activitynavigation/src/main/res/layout/activity_navigation.xml" value="0.19692307692307692" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/activitynavigation/src/main/res/layout/activity_second.xml" value="0.19692307692307692" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/alertdialog/src/main/res/layout/activity_alert_dialog.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/alertdialog/src/main/res/layout/custom_layout.xml" value="0.3759765625" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/alertdialog/src/main/res/layout/fragment_alert_dialog.xml" value="0.2" />
