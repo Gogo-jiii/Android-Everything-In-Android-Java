@@ -61,6 +61,6 @@ dependencies {
     implementation project(':app:imageview')
     implementation project(':app:textinputlayout')
     implementation project(':app:sharedpreference')
-    implementation project(':app:activitynavigation')
+    implementation project(':app:activity')
 
 }

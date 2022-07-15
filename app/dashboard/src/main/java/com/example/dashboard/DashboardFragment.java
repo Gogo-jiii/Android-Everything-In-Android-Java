@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.activitynavigation.ActivityNavigationActivity;
+import com.example.activity.FirstActivity;
 import com.example.commonmodule.ToolbarManager;
 import com.example.dashboard.databinding.FragmentDashboardBinding;
 
@@ -27,7 +27,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     ArrayList<DashboardModel> list = new ArrayList<>();
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
-            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity Navigation"};
+            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -141,8 +141,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case SHARED_PREFERENCE:
                 navController.navigate(R.id.action_dashboardFragment_to_shared_pref_nav_graph);
                 break;
-            case ACTIVITY_NAVIGATION:
-                Intent intent = new Intent(getContext(), ActivityNavigationActivity.class);
+            case ACTIVITY:
+                Intent intent = new Intent(getContext(), FirstActivity.class);
                 startActivity(intent);
                 break;
         }
@@ -170,7 +170,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         IMAGEVIEW,
         TEXT_INPUT_LAYOUT,
         SHARED_PREFERENCE,
-        ACTIVITY_NAVIGATION;
+        ACTIVITY;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

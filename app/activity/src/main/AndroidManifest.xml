@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.activitynavigation">
+    package="com.example.activity">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EverythingInAndroidJava">
         <activity
+            android:name=".FifthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+        <activity
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityNavigationActivity"
+            android:name=".FirstActivity"
             android:exported="true" />
     </application>
 

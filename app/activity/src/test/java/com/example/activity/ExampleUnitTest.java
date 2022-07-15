@@ -1,4 +1,4 @@
-package com.example.activitynavigation;
+package com.example.activity;
 
 import org.junit.Test;
 
