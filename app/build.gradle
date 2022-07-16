@@ -60,5 +60,5 @@ dependencies {
     implementation project(':app:textinputlayout')
     implementation project(':app:sharedpreference')
     implementation project(':app:activity')
-
+    implementation project(':app:fragment')
 }

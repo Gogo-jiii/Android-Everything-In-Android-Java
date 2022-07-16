@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fragment</string>
+    <string name="sixth_fragment">SIXTH FRAGMENT</string>
+    <string name="second_fragment">SECOND FRAGMENT</string>
+    <string name="third_fragment">THIRD FRAGMENT</string>
+    <string name="fifth_fragment">FIFTH FRAGMENT</string>
+    <string name="go_to_fragment_six_without_backstack">go to fragment six without backstack</string>
+    <string name="fourth_fragment">FOURTH FRAGMENT</string>
+    <string name="go_to_fragment_five_with_backstack">go to fragment five with backstack</string>
+    <string name="go_to_second_fragment">go to second fragment</string>
+    <string name="go_to_third_fragment_with_some_data">go to third fragment with some data</string>
+    <string name="go_to_fragment_four_with_backstack">go to fragment four with backstack</string>
+</resources>

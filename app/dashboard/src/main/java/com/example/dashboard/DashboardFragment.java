@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.activity.FirstActivity;
 import com.example.commonmodule.ToolbarManager;
 import com.example.dashboard.databinding.FragmentDashboardBinding;
+import com.example.fragment.FragmentsActivity;
 
 import java.util.ArrayList;
 
@@ -27,7 +28,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     ArrayList<DashboardModel> list = new ArrayList<>();
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
-            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity"};
+            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -142,8 +143,10 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
                 navController.navigate(R.id.action_dashboardFragment_to_shared_pref_nav_graph);
                 break;
             case ACTIVITY:
-                Intent intent = new Intent(getContext(), FirstActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getContext(), FirstActivity.class));
+                break;
+            case FRAGMENT:
+                startActivity(new Intent(getContext(), FragmentsActivity.class));
                 break;
         }
     }
@@ -170,7 +173,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         IMAGEVIEW,
         TEXT_INPUT_LAYOUT,
         SHARED_PREFERENCE,
-        ACTIVITY;
+        ACTIVITY,
+        FRAGMENT;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 
