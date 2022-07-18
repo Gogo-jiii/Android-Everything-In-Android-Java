@@ -54,6 +54,18 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/radiobutton/src/main/res/layout/activity_radio_button.xml" value="0.1875" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/radiobutton/src/main/res/layout/fragment_radiobutton.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/ratingbar/src/main/res/layout/fragment_ratingbar.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/simplerecyclerview/src/main/res/layout/activity_simple_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/activity_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_multiple_items_selection_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_recyclerview_animation.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_recycllerview.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_simple_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/fragment_single_selection_recyclerview.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/row_item_animation.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/row_item_multiple_items_selection.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/row_item_simple_recyclerview.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/recyclerview/src/main/res/layout/row_item_single_item_selection.xml" value="0.19895833333333332" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/fragment_seekbar.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/sharedpreference/src/main/res/layout/activity_share_preference.xml" value="0.19692307692307692" />

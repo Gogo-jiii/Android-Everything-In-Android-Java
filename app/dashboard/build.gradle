@@ -63,5 +63,6 @@ dependencies {
     implementation project(':app:sharedpreference')
     implementation project(':app:activity')
     implementation project(':app:fragment')
+    implementation project(':app:recyclerview')
 
 }

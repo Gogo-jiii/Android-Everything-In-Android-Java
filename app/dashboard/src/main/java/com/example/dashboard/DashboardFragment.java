@@ -26,9 +26,12 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
 
     FragmentDashboardBinding binding;
     ArrayList<DashboardModel> list = new ArrayList<>();
+
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
-            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment"};
+            "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
+    "Recyclerview"};
+
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -148,6 +151,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case FRAGMENT:
                 startActivity(new Intent(getContext(), FragmentsActivity.class));
                 break;
+            case RECYCLER_VIEW:
+                navController.navigate(R.id.action_dashboardFragment_to_recyclerview_nav_graph);
+                break;
         }
     }
 
@@ -174,7 +180,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         TEXT_INPUT_LAYOUT,
         SHARED_PREFERENCE,
         ACTIVITY,
-        FRAGMENT;
+        FRAGMENT,
+        RECYCLER_VIEW;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

@@ -27,6 +27,8 @@
             <option value="$PROJECT_DIR$/app/progressdialog" />
             <option value="$PROJECT_DIR$/app/radiobutton" />
             <option value="$PROJECT_DIR$/app/ratingbar" />
+            <option value="$PROJECT_DIR$/app/recyclerview" />
+            <option value="$PROJECT_DIR$/app/recyclerview/simplerecyclerview" />
             <option value="$PROJECT_DIR$/app/seekbar" />
             <option value="$PROJECT_DIR$/app/sharedpreference" />
             <option value="$PROJECT_DIR$/app/snackbar" />
