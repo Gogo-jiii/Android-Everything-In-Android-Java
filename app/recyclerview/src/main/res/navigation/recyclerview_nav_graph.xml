@@ -31,6 +31,15 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewDragDropItemFragment"
             app:destination="@id/recyclerviewDragDropItemFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewGridLayoutFragment"
+            app:destination="@id/recyclerviewGridLayoutFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewStaggeredLayoutFragment"
+            app:destination="@id/recyclerviewStaggeredLayoutFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewStaggeredLayoutFragment2"
+            app:destination="@id/recyclerviewStaggeredLayoutFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -67,4 +76,14 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewDragDropItemFragment"
         android:label="Recyclerview Drag Drop Item"
         tools:layout="@layout/fragment_recyclerview_drag_drop_item" />
+    <fragment
+        android:id="@+id/recyclerviewGridLayoutFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewGridLayoutFragment"
+        android:label="Recyclerview Grid Layout"
+        tools:layout="@layout/fragment_recyclerview_grid_layout" />
+    <fragment
+        android:id="@+id/recyclerviewStaggeredLayoutFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewStaggeredLayoutFragment"
+        android:label="Recyclerview Staggered Layout"
+        tools:layout="@layout/fragment_recyclerview_staggered_layout" />
 </navigation>
