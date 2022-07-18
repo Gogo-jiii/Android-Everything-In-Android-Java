@@ -23,7 +23,8 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
 
     FragmentRecyclerviewBinding binding;
     ArrayList<RecyclerviewModel> list = new ArrayList<>();
-    String[] data = new String[]{"Simple Recycler View", "Recyclerview Animation", "Recyclerview Single Item Selection", "Recyclerview Multiple Items Selection"};
+    String[] data = new String[]{"Simple Recycler View", "Animation", "Single Item Selection", "Multiple Items Selection",
+    "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -86,6 +87,15 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
             case RECYCLER_VIEW_MULTIPLE_ITEM_SELECTION:
                 navController.navigate(R.id.action_recyclerviewFragment_to_multipleItemsSelectionRecyclerviewFragment);
                 break;
+            case RECYCLERVIEW_SWIPE_TO_DELETE_ITEM:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewSwipeToDeleteFragment);
+                break;
+            case RECYCLERVIEW_SWIPE_TO_DELETE_ITEM_WITH_ICON:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewSwipeToDeleteIconFragment);
+                break;
+            case RECYCLERVIEW_DRAG_DROP_ITEM:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewDragDropItemFragment);
+                break;
         }
     }
 
@@ -93,7 +103,10 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         NORMAL_RECYCLER_VIEW,
         RECYCLER_VIEW_ANIMATION,
         RECYCLER_VIEW_SINGLE_ITEM_SELECTION,
-        RECYCLER_VIEW_MULTIPLE_ITEM_SELECTION;
+        RECYCLER_VIEW_MULTIPLE_ITEM_SELECTION,
+        RECYCLERVIEW_SWIPE_TO_DELETE_ITEM,
+        RECYCLERVIEW_SWIPE_TO_DELETE_ITEM_WITH_ICON,
+        RECYCLERVIEW_DRAG_DROP_ITEM;
 
         private static RecyclerviewFragment.DashboardType[] list = RecyclerviewFragment.DashboardType.values();
 

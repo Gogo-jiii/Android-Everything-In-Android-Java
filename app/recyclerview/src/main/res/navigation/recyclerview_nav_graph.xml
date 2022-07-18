@@ -22,6 +22,15 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_multipleItemsSelectionRecyclerviewFragment"
             app:destination="@id/multipleItemsSelectionRecyclerviewFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewSwipeToDeleteFragment"
+            app:destination="@id/recyclerviewSwipeToDeleteFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewSwipeToDeleteIconFragment"
+            app:destination="@id/recyclerviewSwipeToDeleteIconFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewDragDropItemFragment"
+            app:destination="@id/recyclerviewDragDropItemFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -43,4 +52,19 @@
         android:name="com.example.recyclerview.fragments.MultipleItemsSelectionRecyclerviewFragment"
         android:label="Recyclerview Multiple Items Selection"
         tools:layout="@layout/fragment_multiple_items_selection_recyclerview" />
+    <fragment
+        android:id="@+id/recyclerviewSwipeToDeleteFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewSwipeToDeleteFragment"
+        android:label="Recyclerview Swipe To Delete Item"
+        tools:layout="@layout/fragment_recyclerview_swipe_to_delete" />
+    <fragment
+        android:id="@+id/recyclerviewSwipeToDeleteIconFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewSwipeToDeleteIconFragment"
+        android:label="Recyclerview Swipe To Delete Item With Icon"
+        tools:layout="@layout/fragment_recyclerview_swipe_to_delete_icon" />
+    <fragment
+        android:id="@+id/recyclerviewDragDropItemFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewDragDropItemFragment"
+        android:label="Recyclerview Drag Drop Item"
+        tools:layout="@layout/fragment_recyclerview_drag_drop_item" />
 </navigation>
