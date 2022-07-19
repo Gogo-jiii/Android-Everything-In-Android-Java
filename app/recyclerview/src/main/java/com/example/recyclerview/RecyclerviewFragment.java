@@ -24,7 +24,8 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
     FragmentRecyclerviewBinding binding;
     ArrayList<RecyclerviewModel> list = new ArrayList<>();
     String[] data = new String[]{"Simple Recycler View", "Animation", "Single Item Selection", "Multiple Items Selection",
-    "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout"};
+    "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout", "View Type",
+    "Horizontal Layout"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -102,6 +103,12 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
             case RECYCLERVIEW_STAGGERED_LAYOUT:
                 navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewStaggeredLayoutFragment);
                 break;
+            case RECYCLERVIEW_VIEW_TYPE:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewViewTypeFragment);
+                break;
+            case RECYCLERVIEW_HORIZONTAL_LAYOUT:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewHorizontalLayoutFragment);
+                break;
         }
     }
 
@@ -114,7 +121,9 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         RECYCLERVIEW_SWIPE_TO_DELETE_ITEM_WITH_ICON,
         RECYCLERVIEW_DRAG_DROP_ITEM,
         RECYCLERVIEW_GRID_LAYOUT,
-        RECYCLERVIEW_STAGGERED_LAYOUT;
+        RECYCLERVIEW_STAGGERED_LAYOUT,
+        RECYCLERVIEW_VIEW_TYPE,
+        RECYCLERVIEW_HORIZONTAL_LAYOUT;
 
         private static RecyclerviewFragment.DashboardType[] list = RecyclerviewFragment.DashboardType.values();
 

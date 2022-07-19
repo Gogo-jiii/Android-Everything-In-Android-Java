@@ -40,6 +40,12 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewStaggeredLayoutFragment2"
             app:destination="@id/recyclerviewStaggeredLayoutFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewViewTypeFragment"
+            app:destination="@id/recyclerviewViewTypeFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewHorizontalLayoutFragment"
+            app:destination="@id/recyclerviewHorizontalLayoutFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -86,4 +92,14 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewStaggeredLayoutFragment"
         android:label="Recyclerview Staggered Layout"
         tools:layout="@layout/fragment_recyclerview_staggered_layout" />
+    <fragment
+        android:id="@+id/recyclerviewViewTypeFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewViewTypeFragment"
+        android:label="Recyclerview View Type"
+        tools:layout="@layout/fragment_recyclerview_view_type" />
+    <fragment
+        android:id="@+id/recyclerviewHorizontalLayoutFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewHorizontalLayoutFragment"
+        android:label="Recyclerview Horizontal Layout"
+        tools:layout="@layout/fragment_recyclerview_horizontal_layout" />
 </navigation>
