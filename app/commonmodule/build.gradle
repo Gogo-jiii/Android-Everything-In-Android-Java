@@ -42,4 +42,7 @@ dependencies {
 
     //SDP
     api 'com.intuit.sdp:sdp-android:1.1.0'
+
+    //swipe to refresh
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
 }

@@ -9,7 +9,7 @@
         android:id="@+id/recyclerviewFragment"
         android:name="com.example.recyclerview.RecyclerviewFragment"
         android:label="Recyclerview"
-        tools:layout="@layout/fragment_recyclerview" >
+        tools:layout="@layout/fragment_recyclerview">
         <action
             android:id="@+id/action_recyclerviewFragment_to_simpleRecyclerviewFragment"
             app:destination="@id/simpleRecyclerviewFragment" />
@@ -46,6 +46,15 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewHorizontalLayoutFragment"
             app:destination="@id/recyclerviewHorizontalLayoutFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewSwipeToRefreshFragment"
+            app:destination="@id/recyclerviewSwipeToRefreshFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewRadioButtonFragment"
+            app:destination="@id/recyclerviewRadioButtonFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewCheckboxFragment"
+            app:destination="@id/recyclerviewCheckboxFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -102,4 +111,19 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewHorizontalLayoutFragment"
         android:label="Recyclerview Horizontal Layout"
         tools:layout="@layout/fragment_recyclerview_horizontal_layout" />
+    <fragment
+        android:id="@+id/recyclerviewSwipeToRefreshFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewSwipeToRefreshFragment"
+        android:label="Recyclerview Swipe To Refresh"
+        tools:layout="@layout/fragment_recyclerview_swipe_to_refresh" />
+    <fragment
+        android:id="@+id/recyclerviewRadioButtonFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewRadioButtonFragment"
+        android:label="Recyclerview Radio Button"
+        tools:layout="@layout/fragment_recyclerview_radio_button" />
+    <fragment
+        android:id="@+id/recyclerviewCheckboxFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewCheckboxFragment"
+        android:label="Recyclerview Checkbox"
+        tools:layout="@layout/fragment_recyclerview_checkbox" />
 </navigation>

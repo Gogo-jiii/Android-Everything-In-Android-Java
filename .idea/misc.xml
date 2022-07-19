@@ -91,19 +91,25 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/activity_webview.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
         <entry key="app/recyclerview/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1795" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_checkbox.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_drag_drop_item.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_grid_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_horizontal_layout.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_radio_button.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_staggered_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_delete.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_delete_icon.xml" value="0.1709223553934341" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_refresh.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_view_type.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_checkbox.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_drag_drop_item.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_grid_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_horizontal_layout.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_radio_button.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_staggered_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete.xml" value="0.21" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete_icon.xml" value="0.17083333333333334" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_refresh.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_image.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_text.xml" value="0.17135416666666667" />
       </map>

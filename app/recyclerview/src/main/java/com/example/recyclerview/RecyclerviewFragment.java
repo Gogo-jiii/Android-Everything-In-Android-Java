@@ -25,7 +25,7 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
     ArrayList<RecyclerviewModel> list = new ArrayList<>();
     String[] data = new String[]{"Simple Recycler View", "Animation", "Single Item Selection", "Multiple Items Selection",
     "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout", "View Type",
-    "Horizontal Layout"};
+    "Horizontal Layout", "Swipe To Refresh", "Radio Button", "Checkbox"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -109,6 +109,15 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
             case RECYCLERVIEW_HORIZONTAL_LAYOUT:
                 navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewHorizontalLayoutFragment);
                 break;
+            case RECYCLERVIEW_SWIPE_TO_REFRESH:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewSwipeToRefreshFragment);
+                break;
+            case RECYCLERVIEW_RADIO_BUTTON:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewRadioButtonFragment);
+                break;
+            case RECYCLERVIEW_CHECK_BOX:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewCheckboxFragment);
+                break;
         }
     }
 
@@ -123,7 +132,10 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         RECYCLERVIEW_GRID_LAYOUT,
         RECYCLERVIEW_STAGGERED_LAYOUT,
         RECYCLERVIEW_VIEW_TYPE,
-        RECYCLERVIEW_HORIZONTAL_LAYOUT;
+        RECYCLERVIEW_HORIZONTAL_LAYOUT,
+        RECYCLERVIEW_SWIPE_TO_REFRESH,
+        RECYCLERVIEW_RADIO_BUTTON,
+        RECYCLERVIEW_CHECK_BOX;
 
         private static RecyclerviewFragment.DashboardType[] list = RecyclerviewFragment.DashboardType.values();
 
