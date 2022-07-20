@@ -55,6 +55,12 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewCheckboxFragment"
             app:destination="@id/recyclerviewCheckboxFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewExpandableFragment"
+            app:destination="@id/recyclerviewExpandableFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewNestedfragment"
+            app:destination="@id/recyclerviewNestedfragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -126,4 +132,14 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewCheckboxFragment"
         android:label="Recyclerview Checkbox"
         tools:layout="@layout/fragment_recyclerview_checkbox" />
+    <fragment
+        android:id="@+id/recyclerviewExpandableFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewExpandableFragment"
+        android:label="Recyclerview Expandable"
+        tools:layout="@layout/fragment_recyclerview_expandable" />
+    <fragment
+        android:id="@+id/recyclerviewNestedfragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewNestedfragment"
+        android:label="Recyclerview Nested"
+        tools:layout="@layout/fragment_recyclerview_nestedfragment" />
 </navigation>
