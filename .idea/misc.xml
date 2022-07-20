@@ -99,6 +99,7 @@
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_horizontal_layout.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_nestedragment.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_radio_button.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_search_filter.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_staggered_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_delete.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_delete_icon.xml" value="0.1709223553934341" />
@@ -112,12 +113,14 @@
         <entry key="app/recyclerview/src/main/res/layout/row_item_nested.xml" value="0.267578125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_nested_child.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_radio_button.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_search_filter.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_staggered_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete.xml" value="0.21" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete_icon.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_refresh.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_image.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_text.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
       </map>
     </option>
   </component>

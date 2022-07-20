@@ -61,6 +61,9 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewNestedfragment"
             app:destination="@id/recyclerviewNestedfragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewSearchFilterFragment"
+            app:destination="@id/recyclerviewSearchFilterFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -142,4 +145,9 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewNestedfragment"
         android:label="Recyclerview Nested"
         tools:layout="@layout/fragment_recyclerview_nestedfragment" />
+    <fragment
+        android:id="@+id/recyclerviewSearchFilterFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewSearchFilterFragment"
+        android:label="Recyclerview Search Filter"
+        tools:layout="@layout/fragment_recyclerview_search_filter" />
 </navigation>
