@@ -79,4 +79,5 @@ public class RecyclerviewHorizontalLayoutFragment extends Fragment implements Re
     public void onRecyclerviewItemClick(int index) {
         Toast.makeText(getContext(), "Data: " + data[index], Toast.LENGTH_SHORT).show();
     }
+
 }

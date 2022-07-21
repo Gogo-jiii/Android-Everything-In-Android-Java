@@ -3,10 +3,15 @@ package com.example.dashboard;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -35,6 +40,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
+    private SearchView searchView;
+    private DashboardAdapter myAdapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -52,12 +59,44 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         toolbarManager = ToolbarManager.getInstance();
         toolbarManager.setupToolbar(getActivity(), navController, null, binding.toolbar,
                 false);
+
+        binding.toolbar.addMenuProvider(new MenuProvider() {
+            @Override
+            public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
+                menuInflater.inflate(com.example.recyclerview.R.menu.toolbar_menu, menu);
+                setupSearchview(menu);
+            }
+
+            @Override
+            public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
+                return false;
+            }
+        });
+    }
+
+    private void setupSearchview(Menu menu) {
+        searchView = (SearchView) menu.findItem(R.id.searchview).getActionView();
+        searchView.setMaxWidth(Integer.MAX_VALUE);
+        searchView.setQueryHint("Search...");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+        });
     }
 
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        DashboardAdapter myAdapter = new DashboardAdapter(getData(), getActivity(), this);
+        myAdapter = new DashboardAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -72,6 +111,11 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         return list;
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        searchView.setIconified(true);
+    }
 
     @Override
     public void onDestroyView() {
@@ -80,8 +124,10 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     }
 
     @Override
-    public void onRecyclerviewItemClick(int type) {
-        switch (DashboardType.getType(type)) {
+    public void onRecyclerviewItemClick(String itemName) {
+        int index = DashboardModel.getIndexOfItem(list, itemName);
+
+        switch (DashboardType.getType(index)) {
             case LOGS:
                 navController.navigate(R.id.action_dashboardFragment_to_logs_nav_graph);
                 break;

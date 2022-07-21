@@ -2,10 +2,16 @@ package com.example.recyclerview;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,16 +25,18 @@ import com.example.recyclerview.databinding.FragmentRecyclerviewBinding;
 import java.util.ArrayList;
 
 
-public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapter.OnRecyclerviewItemClickListener{
+public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapter.OnRecyclerviewItemClickListener {
 
     FragmentRecyclerviewBinding binding;
     ArrayList<RecyclerviewModel> list = new ArrayList<>();
     String[] data = new String[]{"Simple Recycler View", "Animation", "Single Item Selection", "Multiple Items Selection",
-    "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout", "View Type",
-    "Horizontal Layout", "Swipe To Refresh", "Radio Button", "Checkbox", "Expandable", "Nested", "Search Filter", "Pagination", "Shimmer Layout"};
+            "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout", "View Type",
+            "Horizontal Layout", "Swipe To Refresh", "Radio Button", "Checkbox", "Expandable", "Nested", "Search Filter", "Pagination", "Shimmer Layout"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
+    private SearchView searchView;
     private NavController navController;
+    private RecyclerviewAdapter myAdapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -39,6 +47,7 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
 
         setupToolbar();
         prepareRecyclerView();
+
         return binding.getRoot();
     }
 
@@ -46,12 +55,44 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         toolbarManager = ToolbarManager.getInstance();
         toolbarManager.setupToolbar(getActivity(), navController, null, binding.toolbar,
                 true);
+
+        binding.toolbar.addMenuProvider(new MenuProvider() {
+            @Override
+            public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
+                menuInflater.inflate(R.menu.toolbar_menu, menu);
+                setupSearchview(menu);
+            }
+
+            @Override
+            public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
+                return false;
+            }
+        });
+    }
+
+    private void setupSearchview(Menu menu) {
+        searchView = (SearchView) menu.findItem(R.id.searchview).getActionView();
+        searchView.setMaxWidth(Integer.MAX_VALUE);
+        searchView.setQueryHint("Search...");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+        });
     }
 
     private void prepareRecyclerView() {
         recyclerView = binding.recyclerView;
 
-        RecyclerviewAdapter myAdapter = new RecyclerviewAdapter(getData(), getActivity(), this);
+        myAdapter = new RecyclerviewAdapter(getData(), getActivity(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
@@ -66,7 +107,6 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         return list;
     }
 
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -74,8 +114,16 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
     }
 
     @Override
-    public void onRecyclerviewItemClick(int type) {
-        switch (DashboardType.getType(type)) {
+    public void onPause() {
+        super.onPause();
+        searchView.setIconified(true);
+    }
+
+    @Override
+    public void onRecyclerviewItemClick(String itemName) {
+        int index = RecyclerviewModel.getIndexOfItem(list, itemName);
+
+        switch (DashboardType.getType(index)) {
             case NORMAL_RECYCLER_VIEW:
                 navController.navigate(R.id.action_recyclerviewFragment_to_simpleRecyclerviewFragment);
                 break;
@@ -162,6 +210,19 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         public static RecyclerviewFragment.DashboardType getType(int i) {
             return list[i];
         }
+    }
+
+    private void onBackpressed() {
+        requireActivity().getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (!searchView.isIconified()) {
+                    searchView.setIconified(true);
+                } else {
+                    requireActivity().onBackPressed();
+                }
+            }
+        });
     }
 
 }
