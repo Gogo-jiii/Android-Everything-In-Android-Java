@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Chips</string>
+    <string name="choice_chip">Choice Chip</string>
+    <string name="chip">chip</string>
+    <string name="entry_chip">Entry Chip</string>
+    <string name="action_chip">Action Chip</string>
+    <string name="filter_chip">Filter Chip</string>
+    <string name="entry_chip_group">Entry Chip Group</string>
+    <string name="chip_1">chip 1</string>
+    <string name="chip_2">chip 2</string>
+    <string name="chip_3">chip 3</string>
+    <string name="choice_chip_group">Choice Chip Group</string>
+    <string name="chip_4">chip 4</string>
+    <string name="chip_5">chip 5</string>
+    <string name="chip_6">chip 6</string>
+    <string name="filter_chip_group">Filter Chip Group</string>
+    <string name="chip_7">chip 7</string>
+    <string name="chip_8">chip 8</string>
+    <string name="chip_9">chip 9</string>
+</resources>
