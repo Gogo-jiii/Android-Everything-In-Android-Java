@@ -64,6 +64,12 @@
         <action
             android:id="@+id/action_recyclerviewFragment_to_recyclerviewSearchFilterFragment"
             app:destination="@id/recyclerviewSearchFilterFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewPaginationFragment"
+            app:destination="@id/recyclerviewPaginationFragment" />
+        <action
+            android:id="@+id/action_recyclerviewFragment_to_recyclerviewShimmerLayoutFragment"
+            app:destination="@id/recyclerviewShimmerLayoutFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleRecyclerviewFragment"
@@ -150,4 +156,14 @@
         android:name="com.example.recyclerview.fragments.RecyclerviewSearchFilterFragment"
         android:label="Recyclerview Search Filter"
         tools:layout="@layout/fragment_recyclerview_search_filter" />
+    <fragment
+        android:id="@+id/recyclerviewPaginationFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewPaginationFragment"
+        android:label="Recyclerview Pagination"
+        tools:layout="@layout/fragment_recyclerview_pagination" />
+    <fragment
+        android:id="@+id/recyclerviewShimmerLayoutFragment"
+        android:name="com.example.recyclerview.fragments.RecyclerviewShimmerLayoutFragment"
+        android:label="Recyclerview Shimmer Layout"
+        tools:layout="@layout/fragment_recyclerview_shimmer_layout" />
 </navigation>

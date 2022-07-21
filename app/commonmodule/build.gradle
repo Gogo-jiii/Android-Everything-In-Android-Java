@@ -43,6 +43,9 @@ dependencies {
     //SDP
     api 'com.intuit.sdp:sdp-android:1.1.0'
 
-    //swipe to refresh
+    //Swipe to refresh
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
+
+    //Shimmer Layout
+    api 'com.facebook.shimmer:shimmer:0.5.0'
 }

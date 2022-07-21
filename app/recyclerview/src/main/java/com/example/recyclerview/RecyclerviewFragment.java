@@ -25,7 +25,7 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
     ArrayList<RecyclerviewModel> list = new ArrayList<>();
     String[] data = new String[]{"Simple Recycler View", "Animation", "Single Item Selection", "Multiple Items Selection",
     "Swipe To Delete Item", "Swipe To Delete Item With Icon", "Drag Drop Item", "Grid Layout", "Staggered Layout", "View Type",
-    "Horizontal Layout", "Swipe To Refresh", "Radio Button", "Checkbox", "Expandable", "Nested", "Search Filter"};
+    "Horizontal Layout", "Swipe To Refresh", "Radio Button", "Checkbox", "Expandable", "Nested", "Search Filter", "Pagination", "Shimmer Layout"};
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
     private NavController navController;
@@ -127,6 +127,12 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
             case RECYCLERVIEW_SEARCH_FILTER:
                 navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewSearchFilterFragment);
                 break;
+            case RECYCLERVIEW_PAGINATION:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewPaginationFragment);
+                break;
+            case RECYCLERVIEW_SHIMMER_LAYOUT:
+                navController.navigate(R.id.action_recyclerviewFragment_to_recyclerviewShimmerLayoutFragment);
+                break;
         }
     }
 
@@ -147,7 +153,9 @@ public class RecyclerviewFragment extends Fragment implements RecyclerviewAdapte
         RECYCLERVIEW_CHECK_BOX,
         RECYCLERVIEW_EXPANDABLE,
         RECYCLERVIEW_NESTED,
-        RECYCLERVIEW_SEARCH_FILTER;
+        RECYCLERVIEW_SEARCH_FILTER,
+        RECYCLERVIEW_PAGINATION,
+        RECYCLERVIEW_SHIMMER_LAYOUT;
 
         private static RecyclerviewFragment.DashboardType[] list = RecyclerviewFragment.DashboardType.values();
 
