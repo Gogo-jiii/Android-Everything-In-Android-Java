@@ -35,7 +35,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
-    "Recyclerview"};
+    "Recyclerview", "System Bars", "Keyboard", "Interface Callback"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -125,6 +125,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
 
     @Override
     public void onRecyclerviewItemClick(String itemName) {
+        searchView.setIconified(true);
         int index = DashboardModel.getIndexOfItem(list, itemName);
 
         switch (DashboardType.getType(index)) {
@@ -200,6 +201,15 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case RECYCLER_VIEW:
                 navController.navigate(R.id.action_dashboardFragment_to_recyclerview_nav_graph);
                 break;
+            case SYSTEM_BARS:
+                navController.navigate(R.id.action_dashboardFragment_to_system_bars_nav_graph);
+                break;
+            case KEYBOARD:
+                navController.navigate(R.id.action_dashboardFragment_to_keyboard_nav_graph);
+                break;
+            case INTERFACE_CALLBACK:
+                navController.navigate(R.id.action_dashboardFragment_to_interface_callback_nav_graph);
+                break;
         }
     }
 
@@ -227,7 +237,10 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         SHARED_PREFERENCE,
         ACTIVITY,
         FRAGMENT,
-        RECYCLER_VIEW;
+        RECYCLER_VIEW,
+        SYSTEM_BARS,
+        KEYBOARD,
+        INTERFACE_CALLBACK;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

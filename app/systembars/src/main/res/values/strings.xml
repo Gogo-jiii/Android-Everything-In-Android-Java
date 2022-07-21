@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">System Bars</string>
+    <string name="show_status_bar">show status bar</string>
+    <string name="hide_status_bar">hide status bar</string>
+    <string name="show_navigation_bar">show navigation bar</string>
+    <string name="hide_navigation_bar">hide navigation bar</string>
+</resources>

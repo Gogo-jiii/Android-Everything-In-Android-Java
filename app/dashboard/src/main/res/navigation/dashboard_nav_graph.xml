@@ -76,6 +76,15 @@
         <action
             android:id="@+id/action_dashboardFragment_to_recyclerview_nav_graph"
             app:destination="@id/recyclerview_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_system_bars_nav_graph"
+            app:destination="@id/system_bars_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_keyboard_nav_graph"
+            app:destination="@id/keyboard_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_interface_callback_nav_graph"
+            app:destination="@id/interface_callback_nav_graph" />
 
     </fragment>
 
@@ -101,4 +110,7 @@
     <include app:graph="@navigation/textinput_layout_nav_graph" />
     <include app:graph="@navigation/shared_pref_nav_graph" />
     <include app:graph="@navigation/recyclerview_nav_graph" />
+    <include app:graph="@navigation/system_bars_nav_graph" />
+    <include app:graph="@navigation/keyboard_nav_graph" />
+    <include app:graph="@navigation/interface_callback_nav_graph" />
 </navigation>

@@ -64,5 +64,7 @@ dependencies {
     implementation project(':app:activity')
     implementation project(':app:fragment')
     implementation project(':app:recyclerview')
-
+    implementation project(':app:systembars')
+    implementation project(':app:keyboard')
+    implementation project(':app:interfacecallback')
 }

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Interface Callback</string>
+    <string name="go_back">go back</string>
+    <string name="go_to_second_fragment">go to second fragment</string>
+</resources>

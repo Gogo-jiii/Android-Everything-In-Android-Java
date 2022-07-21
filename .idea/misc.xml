@@ -91,6 +91,13 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/activity_webview.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
         <entry key="app/dashboard/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/layout/activity_interface_callback.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/layout/first_fragment.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/layout/fragment_one.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/layout/fragment_two.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/layout/second_fragment.xml" value="0.1" />
+        <entry key="app/keyboard/src/main/res/layout/activity_keyboard.xml" value="0.17135416666666667" />
+        <entry key="app/keyboard/src/main/res/layout/fragment_keyboard.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1795" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview.xml" value="0.18566591422121898" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_checkbox.xml" value="0.17135416666666667" />
@@ -127,6 +134,9 @@
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_image.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_text.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
+        <entry key="app/spinner/src/main/res/layout/fragment_spinner.xml" value="0.1" />
+        <entry key="app/systembars/src/main/res/layout/activity_system_bars.xml" value="0.1" />
+        <entry key="app/systembars/src/main/res/layout/fragment_system_bars.xml" value="0.2" />
       </map>
     </option>
   </component>
