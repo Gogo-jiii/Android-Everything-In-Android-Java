@@ -35,7 +35,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
-    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard"};
+    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -63,7 +63,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         binding.toolbar.addMenuProvider(new MenuProvider() {
             @Override
             public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
-                menuInflater.inflate(com.example.recyclerview.R.menu.toolbar_menu, menu);
+                menuInflater.inflate(R.menu.toolbar_menu, menu);
                 setupSearchview(menu);
             }
 
@@ -216,6 +216,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case CLIPBOARD:
                 navController.navigate(R.id.action_dashboardFragment_to_clipboard_nav_graph);
                 break;
+            case TOOLBAR:
+                navController.navigate(R.id.action_dashboardFragment_to_toolbar_nav_graph);
+                break;
         }
     }
 
@@ -248,7 +251,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         KEYBOARD,
         INTERFACE_CALLBACK,
         CHIPS,
-        CLIPBOARD;
+        CLIPBOARD,
+        TOOLBAR;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

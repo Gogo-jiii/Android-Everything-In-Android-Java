@@ -67,4 +67,6 @@ dependencies {
     implementation project(':app:interfacecallback')
     implementation project(':app:chips')
     implementation project(':app:clipboard')
+    implementation project(':app:toolbar')
+
 }

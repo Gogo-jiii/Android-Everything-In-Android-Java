@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_nav_graph"
+    app:startDestination="@id/toolbarFragment">
+
+    <fragment
+        android:id="@+id/toolbarFragment"
+        android:name="com.example.toolbar.ToolbarFragment"
+        android:label="Toolbar"
+        tools:layout="@layout/fragment_toolbar" >
+        <action
+            android:id="@+id/action_toolbarFragment_to_toolbarMenuFragment"
+            app:destination="@id/toolbarMenuFragment" />
+        <action
+            android:id="@+id/action_toolbarFragment_to_collapsingToolbarFragment"
+            app:destination="@id/collapsingToolbarFragment" />
+        <action
+            android:id="@+id/action_toolbarFragment_to_scrollingToolbarFragment"
+            app:destination="@id/scrollingToolbarFragment" />
+        <action
+            android:id="@+id/action_toolbarFragment_to_toolbarWithImageFragment"
+            app:destination="@id/toolbarWithImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolbarMenuFragment"
+        android:name="com.example.toolbar.ToolbarMenuFragment"
+        android:label="Toolbar Menu"
+        tools:layout="@layout/fragment_toolbar_menu" />
+    <fragment
+        android:id="@+id/collapsingToolbarFragment"
+        android:name="com.example.toolbar.CollapsingToolbarFragment"
+        android:label="fragment_collapsing_toolbar"
+        tools:layout="@layout/fragment_collapsing_toolbar" />
+    <fragment
+        android:id="@+id/scrollingToolbarFragment"
+        tools:layout="@layout/fragment_scrolling_toolbar"
+        android:name="com.example.toolbar.ScrollingToolbarFragment"
+        android:label="ScrollingToolbarFragment" />
+    <fragment
+        android:id="@+id/toolbarWithImageFragment"
+        android:name="com.example.toolbar.ToolbarWithImageFragment"
+        android:label="fragment_toolbar_with_image"
+        tools:layout="@layout/fragment_toolbar_with_image" />
+</navigation>

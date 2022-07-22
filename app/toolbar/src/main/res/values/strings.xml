@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+    <string name="one">one</string>
+    <string name="bluetooth">bluetooth</string>
+    <string name="toolbar_menu">toolbar menu</string>
+    <string name="collapsing_toolbar">collapsing toolbar</string>
+    <string name="scrolling_toolabr">Scrolling toolabr</string>
+    <string name="toolbar_with_image">toolbar with image</string>
+    <string name="description">Description</string>
+</resources>
