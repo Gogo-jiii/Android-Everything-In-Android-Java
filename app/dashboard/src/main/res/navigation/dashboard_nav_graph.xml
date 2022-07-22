@@ -88,6 +88,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_chips_navigation"
             app:destination="@id/chips_navigation" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_clipboard_nav_graph"
+            app:destination="@id/clipboard_nav_graph" />
 
     </fragment>
 
@@ -117,4 +120,5 @@
     <include app:graph="@navigation/keyboard_nav_graph" />
     <include app:graph="@navigation/interface_callback_nav_graph" />
     <include app:graph="@navigation/chips_navigation" />
+    <include app:graph="@navigation/clipboard_nav_graph" />
 </navigation>

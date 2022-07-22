@@ -35,7 +35,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
-    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group"};
+    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -213,6 +213,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case CHIPS:
                 navController.navigate(R.id.action_dashboardFragment_to_chips_navigation);
                 break;
+            case CLIPBOARD:
+                navController.navigate(R.id.action_dashboardFragment_to_clipboard_nav_graph);
+                break;
         }
     }
 
@@ -244,7 +247,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         SYSTEM_BARS,
         KEYBOARD,
         INTERFACE_CALLBACK,
-        CHIPS;
+        CHIPS,
+        CLIPBOARD;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

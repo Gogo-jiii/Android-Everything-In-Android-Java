@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clipboard_nav_graph"
+    app:startDestination="@id/clipboardFragment">
+
+    <fragment
+        android:id="@+id/clipboardFragment"
+        android:name="com.example.clipboard.ClipboardFragment"
+        android:label="Clipboard"
+        tools:layout="@layout/fragment_clipboard" />
+</navigation>

@@ -92,6 +92,8 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
         <entry key="app/chips/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1535" />
         <entry key="app/chips/src/main/res/layout/fragment_chips.xml" value="0.25" />
+        <entry key="app/clipboard/src/main/res/layout/activity_clipboard.xml" value="0.17135416666666667" />
+        <entry key="app/clipboard/src/main/res/layout/fragment_clipboard.xml" value="0.1" />
         <entry key="app/dashboard/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/activity_interface_callback.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/first_fragment.xml" value="0.17135416666666667" />
