@@ -35,7 +35,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
-    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar"};
+    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
+    "Bottom Navigation"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -219,6 +220,15 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case TOOLBAR:
                 navController.navigate(R.id.action_dashboardFragment_to_toolbar_nav_graph);
                 break;
+            case FAB:
+                navController.navigate(R.id.action_dashboardFragment_to_fab_nav_graph);
+                break;
+            case BOTTOM_APP_BAR:
+                navController.navigate(R.id.action_dashboardFragment_to_bottom_action_bar_nav_graph);
+                break;
+            case BOTTOM_NAVIGATION:
+                navController.navigate(R.id.action_dashboardFragment_to_bottom_navigation_nav_graph);
+                break;
         }
     }
 
@@ -252,7 +262,10 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         INTERFACE_CALLBACK,
         CHIPS,
         CLIPBOARD,
-        TOOLBAR;
+        TOOLBAR,
+        FAB,
+        BOTTOM_APP_BAR,
+        BOTTOM_NAVIGATION;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

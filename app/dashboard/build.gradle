@@ -70,5 +70,7 @@ dependencies {
     implementation project(':app:chips')
     implementation project(':app:clipboard')
     implementation project(':app:toolbar')
-
+    implementation project(':app:floatingactionbutton')
+    implementation project(':app:bottomappbar')
+    implementation project(':app:bottomnavigation')
 }

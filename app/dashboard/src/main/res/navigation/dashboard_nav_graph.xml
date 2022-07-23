@@ -94,6 +94,15 @@
         <action
             android:id="@+id/action_dashboardFragment_to_toolbar_nav_graph"
             app:destination="@id/toolbar_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_fab_nav_graph"
+            app:destination="@id/fab_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bottom_action_bar_nav_graph"
+            app:destination="@id/bottom_action_bar_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bottom_navigation_nav_graph"
+            app:destination="@id/bottom_navigation_nav_graph" />
 
     </fragment>
 
@@ -125,4 +134,7 @@
     <include app:graph="@navigation/chips_navigation" />
     <include app:graph="@navigation/clipboard_nav_graph" />
     <include app:graph="@navigation/toolbar_nav_graph" />
+    <include app:graph="@navigation/fab_nav_graph" />
+    <include app:graph="@navigation/bottom_app_bar_nav_graph" />
+    <include app:graph="@navigation/bottom_navigation_nav_graph" />
 </navigation>

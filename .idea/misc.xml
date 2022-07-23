@@ -90,11 +90,23 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/fragment_toggle_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/activity_webview.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
+        <entry key="app/bottomactionbar/src/main/res/layout/fragment_bottom_action_bar.xml" value="0.17135416666666667" />
+        <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1535" />
+        <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="app/bottomappbar/src/main/res/layout/activity_bottom_app_bar.xml" value="0.17135416666666667" />
+        <entry key="app/bottomappbar/src/main/res/layout/fragment_bottom_app_bar.xml" value="0.17135416666666667" />
+        <entry key="app/bottomappbar/src/main/res/menu/bottom_app_bar_menu.xml" value="0.10489856506679862" />
+        <entry key="app/bottomnavigation/src/main/res/layout/activity_bottom_navigation.xml" value="0.17135416666666667" />
+        <entry key="app/bottomnavigation/src/main/res/layout/fragment_bottom_navigation.xml" value="0.17135416666666667" />
+        <entry key="app/bottomnavigation/src/main/res/layout/fragment_bottom_navigation1.xml" value="0.17135416666666667" />
+        <entry key="app/bottomnavigation/src/main/res/layout/fragment_bottom_navigation2.xml" value="0.17135416666666667" />
+        <entry key="app/bottomnavigation/src/main/res/menu/bottom_navigaiton_menu.xml" value="0.17135416666666667" />
         <entry key="app/chips/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1535" />
         <entry key="app/chips/src/main/res/layout/fragment_chips.xml" value="0.25" />
         <entry key="app/clipboard/src/main/res/layout/activity_clipboard.xml" value="0.17135416666666667" />
         <entry key="app/clipboard/src/main/res/layout/fragment_clipboard.xml" value="0.1" />
         <entry key="app/dashboard/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
+        <entry key="app/floatingactionbutton/src/main/res/layout/fragment_fab.xml" value="0.21" />
         <entry key="app/interfacecallback/src/main/res/layout/activity_interface_callback.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/first_fragment.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/fragment_one.xml" value="0.17135416666666667" />

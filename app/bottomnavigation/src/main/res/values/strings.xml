@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bottom Navigation</string>
+    <string name="android">Android</string>
+    <string name="settings">Settings</string>
+    <string name="first_fragment">FIRST FRAGMENT</string>
+    <string name="second_fragment">SECOND FRAGMENT</string>
+</resources>
