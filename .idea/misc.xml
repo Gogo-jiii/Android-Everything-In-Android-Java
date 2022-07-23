@@ -90,12 +90,28 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/fragment_toggle_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/activity_webview.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
+        <entry key="app/activity/src/main/res/layout/activity_first.xml" value="0.17135416666666667" />
+        <entry key="app/activity/src/main/res/layout/activity_fourth.xml" value="0.17135416666666667" />
+        <entry key="app/activity/src/main/res/layout/activity_second.xml" value="0.17135416666666667" />
+        <entry key="app/activity/src/main/res/layout/activity_third.xml" value="0.17135416666666667" />
+        <entry key="app/alertdialog/src/main/res/layout/custom_layout.xml" value="0.17135416666666667" />
+        <entry key="app/alertdialog/src/main/res/layout/fragment_alert_dialog.xml" value="0.17135416666666667" />
+        <entry key="app/alertdialog/src/main/res/layout/row_item.xml" value="0.17135416666666667" />
+        <entry key="app/autocompletetextview/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
+        <entry key="app/autocompletetextview/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="app/bottomactionbar/src/main/res/layout/fragment_bottom_action_bar.xml" value="0.17135416666666667" />
+        <entry key="app/bottomappbar/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
         <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1535" />
+        <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_android_24.xml" value="0.1535" />
+        <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1535" />
         <entry key="app/bottomappbar/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="app/bottomappbar/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="app/bottomappbar/src/main/res/layout/activity_bottom_app_bar.xml" value="0.17135416666666667" />
         <entry key="app/bottomappbar/src/main/res/layout/fragment_bottom_app_bar.xml" value="0.17135416666666667" />
         <entry key="app/bottomappbar/src/main/res/menu/bottom_app_bar_menu.xml" value="0.10489856506679862" />
+        <entry key="app/bottomnavigation/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
+        <entry key="app/bottomnavigation/src/main/res/drawable/ic_baseline_android_24.xml" value="0.1535" />
+        <entry key="app/bottomnavigation/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="app/bottomnavigation/src/main/res/layout/activity_bottom_navigation.xml" value="0.17135416666666667" />
         <entry key="app/bottomnavigation/src/main/res/layout/fragment_bottom_navigation.xml" value="0.17135416666666667" />
         <entry key="app/bottomnavigation/src/main/res/layout/fragment_bottom_navigation1.xml" value="0.17135416666666667" />
@@ -103,10 +119,24 @@
         <entry key="app/bottomnavigation/src/main/res/menu/bottom_navigaiton_menu.xml" value="0.17135416666666667" />
         <entry key="app/chips/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1535" />
         <entry key="app/chips/src/main/res/layout/fragment_chips.xml" value="0.25" />
+        <entry key="app/clipboard/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
+        <entry key="app/clipboard/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="app/clipboard/src/main/res/layout/activity_clipboard.xml" value="0.17135416666666667" />
         <entry key="app/clipboard/src/main/res/layout/fragment_clipboard.xml" value="0.1" />
+        <entry key="app/dashboard/src/main/res/layout/activity_dashboard.xml" value="0.17135416666666667" />
+        <entry key="app/dashboard/src/main/res/layout/fragment_dashboard.xml" value="0.17135416666666667" />
         <entry key="app/dashboard/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
+        <entry key="app/datepickerdialog/src/main/res/layout/activity_date_picker_dialog.xml" value="0.17135416666666667" />
+        <entry key="app/floatingactionbutton/src/main/res/layout/activity_fab.xml" value="0.17135416666666667" />
         <entry key="app/floatingactionbutton/src/main/res/layout/fragment_fab.xml" value="0.21" />
+        <entry key="app/fragment/src/main/res/layout/activity_fragments.xml" value="0.17135416666666667" />
+        <entry key="app/fragment/src/main/res/layout/fragment_five.xml" value="0.17135416666666667" />
+        <entry key="app/fragment/src/main/res/layout/fragment_four.xml" value="0.17135416666666667" />
+        <entry key="app/fragment/src/main/res/layout/fragment_one.xml" value="0.17135416666666667" />
+        <entry key="app/fragment/src/main/res/layout/fragment_six.xml" value="0.17135416666666667" />
+        <entry key="app/fragment/src/main/res/layout/fragment_three.xml" value="0.17135416666666667" />
+        <entry key="app/imageview/src/main/res/layout/activity_imageview.xml" value="0.17135416666666667" />
+        <entry key="app/interfacecallback/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
         <entry key="app/interfacecallback/src/main/res/layout/activity_interface_callback.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/first_fragment.xml" value="0.17135416666666667" />
         <entry key="app/interfacecallback/src/main/res/layout/fragment_one.xml" value="0.17135416666666667" />
@@ -115,12 +145,16 @@
         <entry key="app/keyboard/src/main/res/layout/activity_keyboard.xml" value="0.17135416666666667" />
         <entry key="app/keyboard/src/main/res/layout/fragment_keyboard.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1795" />
+        <entry key="app/recyclerview/src/main/res/layout/activity_recyclerview.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_multiple_items_selection_recyclerview.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview.xml" value="0.18566591422121898" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_animation.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_checkbox.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_drag_drop_item.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_expandable.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_grid_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_horizontal_layout.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_nestedfragment.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_nestedragment.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_pagination.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_radio_button.xml" value="0.17135416666666667" />
@@ -131,18 +165,25 @@
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_delete_icon.xml" value="0.1709223553934341" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_swipe_to_refresh.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/fragment_recyclerview_view_type.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/fragment_simple_recyclerview.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_animation.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_checkbox.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_drag_drop_item.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_expandable.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_grid_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_horizontal_layout.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_multiple_items_selection.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_nested.xml" value="0.267578125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_nested_child.xml" value="0.1703125" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_nested_parent.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_pagination.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_radio_button.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_search_filter.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_shimmer_layout.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_shimmer_shadow.xml" value="0.1703125" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_simple_recyclerview.xml" value="0.17135416666666667" />
+        <entry key="app/recyclerview/src/main/res/layout/row_item_single_item_selection.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_staggered_layout.xml" value="0.17083333333333334" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete.xml" value="0.21" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_swipe_to_delete_icon.xml" value="0.17083333333333334" />
@@ -150,9 +191,16 @@
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_image.xml" value="0.1703125" />
         <entry key="app/recyclerview/src/main/res/layout/row_item_view_type_text.xml" value="0.17135416666666667" />
         <entry key="app/recyclerview/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
+        <entry key="app/sharedpreference/src/main/res/layout/fragment_shared_preference.xml" value="0.17135416666666667" />
+        <entry key="app/snackbar/src/main/res/layout/custom_snackbar_layout.xml" value="0.17135416666666667" />
+        <entry key="app/snackbar/src/main/res/layout/fragment_snackbar.xml" value="0.17135416666666667" />
+        <entry key="app/snackbar/src/main/res/layout/row_item.xml" value="0.17135416666666667" />
         <entry key="app/spinner/src/main/res/layout/fragment_spinner.xml" value="0.1" />
         <entry key="app/systembars/src/main/res/layout/activity_system_bars.xml" value="0.1" />
         <entry key="app/systembars/src/main/res/layout/fragment_system_bars.xml" value="0.2" />
+        <entry key="app/textinputlayout/src/main/res/layout/activity_text_input_layout.xml" value="0.17135416666666667" />
+        <entry key="app/timepickerdialog/src/main/res/layout/activity_time_picker_dialog.xml" value="0.17135416666666667" />
+        <entry key="app/togglebutton/src/main/res/layout/activity_toggle_button.xml" value="0.17135416666666667" />
         <entry key="app/togglebutton/src/main/res/layout/fragment_toolbar_menu.xml" value="0.17135416666666667" />
         <entry key="app/toolbar/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1535" />
         <entry key="app/toolbar/src/main/res/layout/activity_toolbar.xml" value="0.17135416666666667" />
@@ -163,6 +211,9 @@
         <entry key="app/toolbar/src/main/res/layout/fragment_toolbar_with_image.xml" value="0.17135416666666667" />
         <entry key="app/toolbar/src/main/res/menu/toolbar_menu.xml" value="0.17135416666666667" />
         <entry key="app/toolbar/src/main/res/menu/toolbar_menu_2.xml" value="0.17135416666666667" />
+        <entry key="app/webview/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
+        <entry key="app/webview/src/main/res/layout/activity_webview.xml" value="0.17135416666666667" />
+        <entry key="app/webview/src/main/res/layout/fragment_webview.xml" value="0.17135416666666667" />
       </map>
     </option>
   </component>
