@@ -103,6 +103,12 @@
         <action
             android:id="@+id/action_dashboardFragment_to_bottom_navigation_nav_graph"
             app:destination="@id/bottom_navigation_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_persistent_bottom_sheet_nav_graph"
+            app:destination="@id/persistent_bottom_sheet_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_modal_bottom_sheet_nav_graph"
+            app:destination="@id/modal_bottom_sheet_nav_graph" />
 
     </fragment>
 
@@ -137,4 +143,6 @@
     <include app:graph="@navigation/fab_nav_graph" />
     <include app:graph="@navigation/bottom_app_bar_nav_graph" />
     <include app:graph="@navigation/bottom_navigation_nav_graph" />
+    <include app:graph="@navigation/persistent_bottom_sheet_nav_graph" />
+    <include app:graph="@navigation/modal_bottom_sheet_nav_graph" />
 </navigation>

@@ -25,6 +25,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dexOptions {
+        incremental true
+    }
 }
 
 dependencies {
@@ -37,8 +40,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Jetpack navigation
-    api 'androidx.navigation:navigation-fragment:2.5.0'
-    api 'androidx.navigation:navigation-ui:2.5.0'
+    api 'androidx.navigation:navigation-fragment:2.5.1'
+    api 'androidx.navigation:navigation-ui:2.5.1'
 
     //SDP
     api 'com.intuit.sdp:sdp-android:1.1.0'

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ModalBottomSheet</string>
+    <string name="show_modal_bottom_sheet">show modal bottom sheet</string>
+</resources>

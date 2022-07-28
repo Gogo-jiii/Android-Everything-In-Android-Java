@@ -73,4 +73,6 @@ dependencies {
     implementation project(':app:floatingactionbutton')
     implementation project(':app:bottomappbar')
     implementation project(':app:bottomnavigation')
+    implementation project(':app:persistentbottomsheet')
+    implementation project(':app:modalbottomsheet')
 }
