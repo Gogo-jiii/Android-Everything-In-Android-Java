@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Viewpager</string>
+    <string name="textview">TextView</string>
+    <string name="fragment_one">FRAGMENT ONE</string>
+    <string name="fragment_two">FRAGMENT TWO</string>
+    <string name="fragment_three">FRAGMENT THREE</string>
+    <string name="static_view_pager">static view pager</string>
+    <string name="dynamic_view_pager">dynamic view pager</string>
+</resources>

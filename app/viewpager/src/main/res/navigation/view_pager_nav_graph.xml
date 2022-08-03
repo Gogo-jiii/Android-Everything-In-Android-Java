@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_pager_nav_graph"
+    app:startDestination="@id/viewpagerFragment">
+
+    <fragment
+        android:id="@+id/viewpagerFragment"
+        android:name="com.example.viewpager.ViewpagerFragment"
+        android:label="View Pager"
+        tools:layout="@layout/fragment_viewpager" >
+        <action
+            android:id="@+id/action_viewpagerFragment_to_staticViewPagerFragment"
+            app:destination="@id/staticViewPagerFragment" />
+        <action
+            android:id="@+id/action_viewpagerFragment_to_dynamicViewPagerFragment"
+            app:destination="@id/dynamicViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staticViewPagerFragment"
+        android:name="com.example.viewpager.static_viewpager.StaticViewPagerFragment"
+        android:label="fragment_static_view_pager"
+        tools:layout="@layout/fragment_static_view_pager" />
+    <fragment
+        android:id="@+id/dynamicViewPagerFragment"
+        android:name="com.example.viewpager.dynamic_viewpager.DynamicViewPagerFragment"
+        android:label="fragment_dynamic_view_pager"
+        tools:layout="@layout/fragment_dynamic_view_pager" />
+
+</navigation>

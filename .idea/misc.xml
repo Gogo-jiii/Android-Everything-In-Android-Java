@@ -48,8 +48,11 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/imageview/src/main/res/layout/fragment_imageview.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/logs/src/main/res/layout/activity_logs.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/logs/src/main/res/layout/fragment_logs.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/activity_modal_bottom_sheet.xml" value="0.16842105263157894" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/fragment_modal_bottom_sheet.xml" value="0.14907407407407408" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/modal_bottom_sheet_view.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/persistentbottomsheet/src/main/res/layout/activity_persistent_bottom_sheet.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/persistentbottomsheet/src/main/res/layout/bottom_sheet_view.xml" value="0.16842105263157894" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/progressdialog/src/main/res/layout/activity_progress_dialog.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/progressdialog/src/main/res/layout/fragment_progress_dialog.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/radiobutton/src/main/res/drawable/custom_radio_button.xml" value="0.127" />
@@ -90,6 +93,20 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/toast/src/main/res/layout/row_item.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/activity_toggle_button.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/togglebutton/src/main/res/layout/fragment_toggle_button.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/drawable/viewpager_indicator_selected.xml" value="0.2075" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/drawable/viewpager_indicator_unselected.xml" value="0.2075" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/activity_viewpager.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_base.xml" value="0.14" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_base_dynamic_view_pager.xml" value="0.15657894736842104" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_base_static_view_pager.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_blue_print.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_dynamic.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_dynamic_view_pager.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_static_one.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_static_three.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_static_two.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_static_view_pager.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/viewpager/src/main/res/layout/fragment_viewpager.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/activity_webview.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/webview/src/main/res/layout/fragment_webview.xml" value="0.1859375" />
         <entry key="app/activity/src/main/res/layout/activity_first.xml" value="0.17135416666666667" />
