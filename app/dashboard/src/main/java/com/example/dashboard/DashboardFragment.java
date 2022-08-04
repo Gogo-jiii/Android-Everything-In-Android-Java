@@ -36,7 +36,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
     "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
-    "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager"};
+    "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -238,6 +238,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case VIEW_PAGER:
                 navController.navigate(R.id.action_dashboardFragment_to_view_pager_nav_graph);
                 break;
+            case TAB_LAYOUT:
+                navController.navigate(R.id.action_dashboardFragment_to_tab_layout_nav_graph);
+                break;
         }
     }
 
@@ -277,7 +280,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         BOTTOM_NAVIGATION,
         PERSISTENT_BOTTOM_SHEET,
         MODAL_BOTTOM_SHEET,
-        VIEW_PAGER;
+        VIEW_PAGER,
+        TAB_LAYOUT;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

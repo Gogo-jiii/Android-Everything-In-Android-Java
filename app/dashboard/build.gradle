@@ -76,4 +76,6 @@ dependencies {
     implementation project(':app:persistentbottomsheet')
     implementation project(':app:modalbottomsheet')
     implementation project(':app:viewpager')
+    implementation project(':app:tablayout')
+
 }

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tab Layout</string>
+    <string name="textview">TextView</string>
+    <string name="tab_1">Tab 1</string>
+    <string name="tab_2">Tab 2</string>
+    <string name="tab_3">Tab 3</string>
+    <string name="tab_layout_with_static_fragments">tab layout with static fragments</string>
+    <string name="tab_layout_with_dynamic_fragments">tab layout with dynamic fragments</string>
+</resources>

@@ -112,6 +112,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_view_pager_nav_graph"
             app:destination="@id/view_pager_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_tab_layout_nav_graph"
+            app:destination="@id/tab_layout_nav_graph" />
 
     </fragment>
 
@@ -149,4 +152,5 @@
     <include app:graph="@navigation/persistent_bottom_sheet_nav_graph" />
     <include app:graph="@navigation/modal_bottom_sheet_nav_graph" />
     <include app:graph="@navigation/view_pager_nav_graph" />
+    <include app:graph="@navigation/tab_layout_nav_graph" />
 </navigation>

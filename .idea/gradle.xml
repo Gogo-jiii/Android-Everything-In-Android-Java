@@ -43,6 +43,7 @@
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/spinner" />
             <option value="$PROJECT_DIR$/app/systembars" />
+            <option value="$PROJECT_DIR$/app/tablayout" />
             <option value="$PROJECT_DIR$/app/textinputlayout" />
             <option value="$PROJECT_DIR$/app/textwatcher" />
             <option value="$PROJECT_DIR$/app/timepickerdialog" />
