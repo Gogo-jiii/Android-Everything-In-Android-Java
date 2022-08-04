@@ -23,6 +23,7 @@ import com.example.activity.FirstActivity;
 import com.example.commonmodule.ToolbarManager;
 import com.example.dashboard.databinding.FragmentDashboardBinding;
 import com.example.fragment.FragmentsActivity;
+import com.example.navigationdrawer.NavigationDrawerActivity;
 
 import java.util.ArrayList;
 
@@ -35,8 +36,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
     String[] data = new String[]{"Logs", "Toast", "Button", "Edit Text", "Text Watcher", "Snackbar", "Checkbox",
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
-    "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
-    "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout"};
+            "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
+            "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -241,6 +242,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case TAB_LAYOUT:
                 navController.navigate(R.id.action_dashboardFragment_to_tab_layout_nav_graph);
                 break;
+            case NAVIGATION_DRAWER:
+                startActivity(new Intent(getContext(), NavigationDrawerActivity.class));
+                break;
         }
     }
 
@@ -281,7 +285,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         PERSISTENT_BOTTOM_SHEET,
         MODAL_BOTTOM_SHEET,
         VIEW_PAGER,
-        TAB_LAYOUT;
+        TAB_LAYOUT,
+        NAVIGATION_DRAWER;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

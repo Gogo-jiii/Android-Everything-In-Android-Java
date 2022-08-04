@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="description">Description</string>
+    <string name="it_wala">IT wala</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+    <string name="title_1">Title 1</string>
+    <string name="item_6">Item 6</string>
+    <string name="item_7">Item 7</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="fragment_three">Fragment Three</string>
+</resources>

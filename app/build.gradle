@@ -79,4 +79,5 @@ dependencies {
     implementation project(':app:modalbottomsheet')
     implementation project(':app:viewpager')
     implementation project(':app:tablayout')
+    implementation project(':app:navigationdrawer')
 }

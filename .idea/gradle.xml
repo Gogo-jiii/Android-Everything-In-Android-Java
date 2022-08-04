@@ -32,6 +32,7 @@
             <option value="$PROJECT_DIR$/app/keyboard" />
             <option value="$PROJECT_DIR$/app/logs" />
             <option value="$PROJECT_DIR$/app/modalbottomsheet" />
+            <option value="$PROJECT_DIR$/app/navigationdrawer" />
             <option value="$PROJECT_DIR$/app/persistentbottomsheet" />
             <option value="$PROJECT_DIR$/app/progressdialog" />
             <option value="$PROJECT_DIR$/app/radiobutton" />
