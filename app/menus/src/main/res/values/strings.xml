@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Menus</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">seven</string>
+    <string name="bluetooth">bluetooth</string>
+    <string name="show_popup_menu">show popup menu</string>
+    <string name="show_context_menu">show context menu</string>
+    <string name="show_action_mode_menu">show action mode menu</string>
+</resources>

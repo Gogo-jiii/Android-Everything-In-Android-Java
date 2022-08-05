@@ -37,7 +37,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Radio Button", "Toggle Button", "Autocomplete Textview", "Spinner", "Alert Dialog", "Ratings Bar", "Seekbar", "Progress Dialog",
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
             "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
-            "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer"};
+            "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer", "Menu"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -245,6 +245,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case NAVIGATION_DRAWER:
                 startActivity(new Intent(getContext(), NavigationDrawerActivity.class));
                 break;
+            case MENU:
+                navController.navigate(R.id.action_dashboardFragment_to_menus_nav_graph);
+                break;
         }
     }
 
@@ -286,7 +289,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         MODAL_BOTTOM_SHEET,
         VIEW_PAGER,
         TAB_LAYOUT,
-        NAVIGATION_DRAWER;
+        NAVIGATION_DRAWER,
+        MENU;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

@@ -78,4 +78,6 @@ dependencies {
     implementation project(':app:viewpager')
     implementation project(':app:tablayout')
     implementation project(':app:navigationdrawer')
+    implementation project(':app:menus')
+
 }

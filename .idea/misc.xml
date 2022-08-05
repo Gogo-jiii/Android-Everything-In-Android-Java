@@ -48,6 +48,12 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/imageview/src/main/res/layout/fragment_imageview.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/logs/src/main/res/layout/activity_logs.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/logs/src/main/res/layout/fragment_logs.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/layout/activity_menus.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/layout/fragment_menus.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/menu/action_mode_context_menu.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/menu/context_menu.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/menu/popup_menu.xml" value="0.16842105263157894" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/menus/src/main/res/menu/toolbar_menu.xml" value="0.16842105263157894" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/activity_modal_bottom_sheet.xml" value="0.16842105263157894" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/fragment_modal_bottom_sheet.xml" value="0.14907407407407408" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/modalbottomsheet/src/main/res/layout/modal_bottom_sheet_view.xml" value="0.1" />
