@@ -81,4 +81,5 @@ dependencies {
     implementation project(':app:tablayout')
     implementation project(':app:navigationdrawer')
     implementation project(':app:menus')
+    implementation project(':app:permissionsmanager')
 }

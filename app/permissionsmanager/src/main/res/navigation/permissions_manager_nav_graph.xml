@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/permissions_manager_nav_graph"
+    app:startDestination="@id/permissionsManagerFragment">
+
+    <fragment
+        android:id="@+id/permissionsManagerFragment"
+        android:name="com.example.permissionsmanager.PermissionsManagerFragment"
+        android:label="Runtime Permissions"
+        tools:layout="@layout/fragment_permissions_manager" />
+</navigation>

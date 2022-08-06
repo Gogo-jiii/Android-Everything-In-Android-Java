@@ -118,6 +118,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_menus_nav_graph"
             app:destination="@id/menus_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_permissions_manager_nav_graph"
+            app:destination="@id/permissions_manager_nav_graph" />
 
     </fragment>
 
@@ -157,4 +160,5 @@
     <include app:graph="@navigation/view_pager_nav_graph" />
     <include app:graph="@navigation/tab_layout_nav_graph" />
     <include app:graph="@navigation/menus_nav_graph" />
+    <include app:graph="@navigation/permissions_manager_nav_graph" />
 </navigation>
