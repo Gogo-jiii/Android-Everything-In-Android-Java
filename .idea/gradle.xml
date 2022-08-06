@@ -53,6 +53,7 @@
             <option value="$PROJECT_DIR$/app/toast" />
             <option value="$PROJECT_DIR$/app/togglebutton" />
             <option value="$PROJECT_DIR$/app/toolbar" />
+            <option value="$PROJECT_DIR$/app/validation" />
             <option value="$PROJECT_DIR$/app/viewpager" />
             <option value="$PROJECT_DIR$/app/webview" />
           </set>
