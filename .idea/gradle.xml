@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/app/menus" />
             <option value="$PROJECT_DIR$/app/modalbottomsheet" />
             <option value="$PROJECT_DIR$/app/navigationdrawer" />
+            <option value="$PROJECT_DIR$/app/notification" />
             <option value="$PROJECT_DIR$/app/permissionsmanager" />
             <option value="$PROJECT_DIR$/app/persistentbottomsheet" />
             <option value="$PROJECT_DIR$/app/progressdialog" />

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notification</string>
+    <string name="default_notification">default notification</string>
+    <string name="big_text_notification">big text notification</string>
+    <string name="big_picture_notification">big picture notification</string>
+    <string name="large_icon_notification">large icon notification</string>
+    <string name="pending_intent_notification">pending intent notification</string>
+</resources>

@@ -83,4 +83,5 @@ dependencies {
     implementation project(':app:menus')
     implementation project(':app:permissionsmanager')
     implementation project(':app:validation')
+    implementation project(':app:notification')
 }
