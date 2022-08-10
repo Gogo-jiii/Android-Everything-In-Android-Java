@@ -38,7 +38,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
             "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
             "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer", "Menu", "Runtime Permissions",
-            "Validation", "Notifications", "Retrofit"};
+            "Validation", "Notifications", "Retrofit", "Volley"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -261,6 +261,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case RETROFIT:
                 navController.navigate(R.id.action_dashboardFragment_to_retrofit_nav_graph);
                 break;
+            case VOLLEY:
+                navController.navigate(R.id.action_dashboardFragment_to_volley_nav_graph);
+                break;
         }
     }
 
@@ -307,7 +310,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         RUNTIME_PERMISSIONS,
         VALIDATION,
         NOTIFICATIONS,
-        RETROFIT;
+        RETROFIT,
+        VOLLEY;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

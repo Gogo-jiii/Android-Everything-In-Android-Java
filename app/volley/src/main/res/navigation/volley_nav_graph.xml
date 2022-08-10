@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/volley_nav_graph"
+    app:startDestination="@id/volleyFragment">
+
+    <fragment
+        android:id="@+id/volleyFragment"
+        android:name="com.example.volley.VolleyFragment"
+        android:label="Volley"
+        tools:layout="@layout/fragment_volley" />
+</navigation>

@@ -83,5 +83,6 @@ dependencies {
     implementation project(':app:validation')
     implementation project(':app:notification')
     implementation project(':app:retrofit')
+    implementation project(':app:volley')
 
 }
