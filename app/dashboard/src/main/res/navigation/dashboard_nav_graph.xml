@@ -127,6 +127,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_notificaiton_nav_graph"
             app:destination="@id/notificaiton_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_retrofit_nav_graph"
+            app:destination="@id/retrofit_nav_graph" />
 
     </fragment>
 
@@ -169,4 +172,5 @@
     <include app:graph="@navigation/permissions_manager_nav_graph" />
     <include app:graph="@navigation/validation_nav_graph" />
     <include app:graph="@navigation/notification_nav_graph" />
+    <include app:graph="@navigation/retrofit_nav_graph" />
 </navigation>
