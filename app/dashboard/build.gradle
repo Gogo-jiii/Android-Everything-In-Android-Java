@@ -86,4 +86,6 @@ dependencies {
     implementation project(':app:volley')
     implementation project(':app:gson')
     implementation project(':app:picasso')
+    implementation project(':app:glide')
+
 }

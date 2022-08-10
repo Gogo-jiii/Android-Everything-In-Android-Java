@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glide_nav_graph"
+    app:startDestination="@id/glideFragment">
+
+    <fragment
+        android:id="@+id/glideFragment"
+        android:name="com.example.glide.GlideFragment"
+        android:label="Glide"
+        tools:layout="@layout/fragment_glide" />
+</navigation>
