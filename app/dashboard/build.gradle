@@ -84,5 +84,5 @@ dependencies {
     implementation project(':app:notification')
     implementation project(':app:retrofit')
     implementation project(':app:volley')
-
+    implementation project(':app:gson')
 }

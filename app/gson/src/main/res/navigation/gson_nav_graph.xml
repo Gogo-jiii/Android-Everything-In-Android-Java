@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gson_nav_graph"
+    app:startDestination="@id/gsonFragment">
+
+    <fragment
+        android:id="@+id/gsonFragment"
+        android:name="com.example.gson.GsonFragment"
+        android:label="GSON"
+        tools:layout="@layout/fragment_gson" />
+</navigation>
