@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">File Picker</string>
+    <string name="pick_a_file">Pick a file</string>
+</resources>
