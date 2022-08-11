@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/stringFormattingFragment"
         android:name="com.example.stringformatting.StringFormattingFragment"
-        android:label="fragment_string_formatting"
+        android:label="String Formatting"
         tools:layout="@layout/fragment_string_formatting" />
 </navigation>

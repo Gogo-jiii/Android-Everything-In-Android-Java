@@ -90,4 +90,5 @@ dependencies {
     implementation project(':app:picasso')
     implementation project(':app:glide')
     implementation project(':app:stringformatting')
+    implementation project(':app:storage')
 }

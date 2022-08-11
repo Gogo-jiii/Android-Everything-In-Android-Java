@@ -38,7 +38,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Webview", "Timepicker Dialog", "Datepicker Dialog", "Imageview", "TextInput Layout", "Shared Preference", "Activity", "Fragment",
             "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
             "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer", "Menu", "Runtime Permissions",
-            "Validation", "Notifications", "Retrofit", "Volley", "GSON", "Picasso", "Glide", "String Formatting"};
+            "Validation", "Notifications", "Retrofit", "Volley", "GSON", "Picasso", "Glide", "String Formatting", "Storage"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -276,6 +276,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case STRING_FORMATTING:
                 navController.navigate(R.id.action_dashboardFragment_to_string_formatting_nav_graph);
                 break;
+            case STORAGE:
+                navController.navigate(R.id.action_dashboardFragment_to_storage_nav_graph);
+                break;
         }
     }
 
@@ -327,7 +330,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         GSON,
         PICASSO,
         GLIDE,
-        STRING_FORMATTING;
+        STRING_FORMATTING,
+        STORAGE;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storage_nav_graph"
+    app:startDestination="@id/storageFragment">
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.example.storage.StorageFragment"
+        android:label="Storage"
+        tools:layout="@layout/fragment_storage" >
+        <action
+            android:id="@+id/action_storageFragment_to_externalStorageFragment"
+            app:destination="@id/externalStorageFragment" />
+        <action
+            android:id="@+id/action_storageFragment_to_internalStorageFragment"
+            app:destination="@id/internalStorageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/externalStorageFragment"
+        android:name="com.example.storage.ExternalStorageFragment"
+        android:label="External Storage"
+        tools:layout="@layout/fragment_external_storage" />
+
+    <fragment
+        android:id="@+id/internalStorageFragment"
+        android:name="com.example.storage.InternalStorageFragment"
+        android:label="Internal Storage"
+        tools:layout="@layout/fragment_internal_storage" />
+</navigation>
