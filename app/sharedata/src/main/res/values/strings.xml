@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Share Data</string>
+    <string name="share_data">share data</string>
+    <string name="enter_data">Enter Data</string>
+</resources>

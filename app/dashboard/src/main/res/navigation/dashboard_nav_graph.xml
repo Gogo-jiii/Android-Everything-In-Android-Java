@@ -151,6 +151,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_file_picker_nav_graph"
             app:destination="@id/file_picker_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_share_data_nav_graph"
+            app:destination="@id/share_data_nav_graph" />
 
     </fragment>
 
@@ -201,4 +204,5 @@
     <include app:graph="@navigation/string_formatting_nav_graph" />
     <include app:graph="@navigation/storage_nav_graph" />
     <include app:graph="@navigation/file_picker_nav_graph" />
+    <include app:graph="@navigation/share_data_nav_graph" />
 </navigation>

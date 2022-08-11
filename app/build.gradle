@@ -92,4 +92,5 @@ dependencies {
     implementation project(':app:stringformatting')
     implementation project(':app:storage')
     implementation project(':app:filepicker')
+    implementation project(':app:sharedata')
 }
