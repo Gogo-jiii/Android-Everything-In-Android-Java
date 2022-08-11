@@ -142,6 +142,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_glide_nav_graph"
             app:destination="@id/glide_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_string_formatting_nav_graph"
+            app:destination="@id/string_formatting_nav_graph" />
 
     </fragment>
 
@@ -189,4 +192,5 @@
     <include app:graph="@navigation/gson_nav_graph" />
     <include app:graph="@navigation/picasso_nav_graph" />
     <include app:graph="@navigation/glide_nav_graph" />
+    <include app:graph="@navigation/string_formatting_nav_graph" />
 </navigation>

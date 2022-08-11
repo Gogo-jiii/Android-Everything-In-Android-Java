@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/string_formatting_nav_graph"
+    app:startDestination="@id/stringFormattingFragment">
+
+    <fragment
+        android:id="@+id/stringFormattingFragment"
+        android:name="com.example.stringformatting.StringFormattingFragment"
+        android:label="fragment_string_formatting"
+        tools:layout="@layout/fragment_string_formatting" />
+</navigation>

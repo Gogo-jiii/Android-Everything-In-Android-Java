@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">String Formatting</string>
+    <string name="string_to_format">"Hello world, from %1$s. Year is %2$d.</string>
+    <string name="html_string">Hello World, from <big><b><u>IT wala</u></b></big></string>
+    <string name="string_formatting">STRING FORMATTING</string>
+    <string name="textview">TextView</string>
+    <string name="html">HTML</string>
+</resources>
