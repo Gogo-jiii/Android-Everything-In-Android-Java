@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pick_image_from_gallery_nav_graph"
+    app:startDestination="@id/pickImageFromGalleryFragment">
+
+    <fragment
+        android:id="@+id/pickImageFromGalleryFragment"
+        android:name="com.example.pickimagefromgallery.PickImageFromGalleryFragment"
+        android:label="Pick Image From Gallery"
+        tools:layout="@layout/fragment_pick_image_from_gallery" />
+</navigation>

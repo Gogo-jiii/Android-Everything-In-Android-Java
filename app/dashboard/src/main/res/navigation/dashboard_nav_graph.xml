@@ -160,6 +160,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_pip_nav_graph"
             app:destination="@id/pip_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_pick_image_from_gallery_nav_graph"
+            app:destination="@id/pick_image_from_gallery_nav_graph" />
 
     </fragment>
 
@@ -213,4 +216,5 @@
     <include app:graph="@navigation/share_data_nav_graph" />
     <include app:graph="@navigation/biometric_auth_nav_graph" />
     <include app:graph="@navigation/pip_nav_graph" />
+    <include app:graph="@navigation/pick_image_from_gallery_nav_graph" />
 </navigation>

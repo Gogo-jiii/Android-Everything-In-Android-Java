@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        minSdk 24
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -93,4 +93,5 @@ dependencies {
     implementation project(':app:sharedata')
     implementation project(':app:biometricauth')
     implementation project(':app:pictureinpicture')
+    implementation project(':app:pickimagefromgallery')
 }

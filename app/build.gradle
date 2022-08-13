@@ -95,4 +95,5 @@ dependencies {
     implementation project(':app:sharedata')
     implementation project(':app:biometricauth')
     implementation project(':app:pictureinpicture')
+    implementation project(':app:pickimagefromgallery')
 }
