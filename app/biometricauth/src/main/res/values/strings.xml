@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Biometric Auth</string>
+    <string name="finger_print_auth">finger print auth</string>
+</resources>

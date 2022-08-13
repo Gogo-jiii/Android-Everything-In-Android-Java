@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/biometric_auth_nav_graph"
+    app:startDestination="@id/biometricAuthFragment">
+
+    <fragment
+        android:id="@+id/biometricAuthFragment"
+        android:name="com.example.biometricauth.BiometricAuthFragment"
+        android:label="Biometric Auth"
+        tools:layout="@layout/fragment_biometric_auth" />
+</navigation>

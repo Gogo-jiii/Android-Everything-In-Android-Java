@@ -93,4 +93,5 @@ dependencies {
     implementation project(':app:storage')
     implementation project(':app:filepicker')
     implementation project(':app:sharedata')
+    implementation project(':app:biometricauth')
 }
