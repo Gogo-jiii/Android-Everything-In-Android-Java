@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pip_nav_graph"
+    app:startDestination="@id/pictureInPictureFragment">
+
+    <fragment
+        android:id="@+id/pictureInPictureFragment"
+        android:name="com.example.pictureinpicture.PictureInPictureFragment"
+        android:label="Picture in Picture"
+        tools:layout="@layout/fragment_picture_in_picture" />
+</navigation>

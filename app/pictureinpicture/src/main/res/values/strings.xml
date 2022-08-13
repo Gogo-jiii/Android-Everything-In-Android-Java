@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Picture in Picture</string>
+    <string name="picture_in_picture">picture in picture</string>
+    <string name="description">Description</string>
+</resources>
