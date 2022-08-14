@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/encryption_nav_graph"
+    app:startDestination="@id/encryptionFragment">
+
+    <fragment
+        android:id="@+id/encryptionFragment"
+        android:name="com.example.encryption.EncryptionFragment"
+        android:label="Encryption"
+        tools:layout="@layout/fragment_encryption" />
+</navigation>
