@@ -96,4 +96,6 @@ dependencies {
     implementation project(':app:pickimagefromgallery')
     implementation project(':app:encryption')
     implementation project(':app:camera')
+    implementation project(':app:sqlite')
+
 }

@@ -39,7 +39,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Recyclerview", "System Bars", "Keyboard", "Interface Callback", "Chips and Chips-Group", "Clipboard", "Toolbar", "Floating Action Button", "Bottom App Bar",
             "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer", "Menu", "Runtime Permissions",
             "Validation", "Notifications", "Retrofit", "Volley", "GSON", "Picasso", "Glide", "String Formatting", "Storage", "File Picker", "Share Data",
-            "Biometric Auth", "Picture In Picture", "Pick Image From Gallery", "Encryption", "Camera"};
+            "Biometric Auth", "Picture In Picture", "Pick Image From Gallery", "Encryption", "Camera", "SQLite"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -301,6 +301,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case CAMERA:
                 navController.navigate(R.id.action_dashboardFragment_to_camera_nav_graph);
                 break;
+            case SQLITE:
+                navController.navigate(R.id.action_dashboardFragment_to_sqlite_nav_graph);
+                break;
         }
     }
 
@@ -360,7 +363,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         PICTURE_IN_PICTURE,
         PICK_IMAGE_FROM_GALLERY,
         ENCRYPTION,
-        CAMERA;
+        CAMERA,
+        SQLITE;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

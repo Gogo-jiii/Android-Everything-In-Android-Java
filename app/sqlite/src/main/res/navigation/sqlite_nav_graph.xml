@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sqlite_nav_graph"
+    app:startDestination="@id/SQLiteFragment">
+
+    <fragment
+        android:id="@+id/SQLiteFragment"
+        android:name="com.example.sqlite.SQLiteFragment"
+        android:label="SQLite"
+        tools:layout="@layout/fragment_s_q_lite" />
+</navigation>

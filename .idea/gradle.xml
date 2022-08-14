@@ -58,6 +58,7 @@
             <option value="$PROJECT_DIR$/app/sharedpreference" />
             <option value="$PROJECT_DIR$/app/snackbar" />
             <option value="$PROJECT_DIR$/app/spinner" />
+            <option value="$PROJECT_DIR$/app/sqlite" />
             <option value="$PROJECT_DIR$/app/storage" />
             <option value="$PROJECT_DIR$/app/stringformatting" />
             <option value="$PROJECT_DIR$/app/systembars" />
