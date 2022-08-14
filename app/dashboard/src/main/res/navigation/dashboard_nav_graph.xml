@@ -172,6 +172,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_sqlite_nav_graph"
             app:destination="@id/sqlite_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_room_nav_graph"
+            app:destination="@id/room_nav_graph" />
 
     </fragment>
 
@@ -229,4 +232,5 @@
     <include app:graph="@navigation/encryption_nav_graph" />
     <include app:graph="@navigation/camera_nav_graph" />
     <include app:graph="@navigation/sqlite_nav_graph" />
+    <include app:graph="@navigation/room_nav_graph" />
 </navigation>

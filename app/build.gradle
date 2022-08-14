@@ -99,4 +99,5 @@ dependencies {
     implementation project(':app:encryption')
     implementation project(':app:camera')
     implementation project(':app:sqlite')
+    implementation project(':app:room')
 }

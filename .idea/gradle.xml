@@ -53,6 +53,7 @@
             <option value="$PROJECT_DIR$/app/recyclerview" />
             <option value="$PROJECT_DIR$/app/recyclerview/simplerecyclerview" />
             <option value="$PROJECT_DIR$/app/retrofit" />
+            <option value="$PROJECT_DIR$/app/room" />
             <option value="$PROJECT_DIR$/app/seekbar" />
             <option value="$PROJECT_DIR$/app/sharedata" />
             <option value="$PROJECT_DIR$/app/sharedpreference" />
