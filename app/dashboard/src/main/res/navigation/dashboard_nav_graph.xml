@@ -166,6 +166,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_encryption_nav_graph"
             app:destination="@id/encryption_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_camera_nav_graph"
+            app:destination="@id/camera_nav_graph" />
 
     </fragment>
 
@@ -221,4 +224,5 @@
     <include app:graph="@navigation/pip_nav_graph" />
     <include app:graph="@navigation/pick_image_from_gallery_nav_graph" />
     <include app:graph="@navigation/encryption_nav_graph" />
+    <include app:graph="@navigation/camera_nav_graph" />
 </navigation>

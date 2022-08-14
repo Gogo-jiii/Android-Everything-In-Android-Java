@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Camera</string>
+    <string name="description">Description</string>
+    <string name="click_photo">click photo</string>
+    <string name="use_camera_api">use camera api</string>
+    <string name="use_camera_x_api">use camera x api</string>
+    <string name="open_camera">open camera</string>
+</resources>

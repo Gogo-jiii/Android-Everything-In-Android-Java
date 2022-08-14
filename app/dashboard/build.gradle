@@ -95,4 +95,5 @@ dependencies {
     implementation project(':app:pictureinpicture')
     implementation project(':app:pickimagefromgallery')
     implementation project(':app:encryption')
+    implementation project(':app:camera')
 }
