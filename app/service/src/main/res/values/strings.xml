@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Service</string>
+    <string name="normal_service">normal service</string>
+    <string name="bounded_service">bounded service</string>
+    <string name="foreground_service">foreground service</string>
+    <string name="start_service">start service</string>
+    <string name="stop_service">stop service</string>
+    <string name="get_data_from_bounded_service">get data from bounded service</string>
+    <string name="bind_to_service">bind to service</string>
+    <string name="unbind_the_service">unbind the service</string>
+    <string name="start_foreground_service">start foreground service</string>
+    <string name="stop_foreground_service">stop foreground service</string>
+</resources>

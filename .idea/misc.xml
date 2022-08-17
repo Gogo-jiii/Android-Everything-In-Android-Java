@@ -117,6 +117,11 @@
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/room/src/main/res/layout/fragment_room.xml" value="0.14649122807017545" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/seekbar/src/main/res/layout/fragment_seekbar.xml" value="0.1859375" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/service/src/main/res/layout/activity_service.xml" value="0.15833333333333333" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/service/src/main/res/layout/fragment_bounded_service.xml" value="0.15833333333333333" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/service/src/main/res/layout/fragment_foreground_service.xml" value="0.14649122807017545" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/service/src/main/res/layout/fragment_normal_service.xml" value="0.14649122807017545" />
+        <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/service/src/main/res/layout/fragment_service_dashboard.xml" value="0.14649122807017545" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/sharedata/src/main/res/layout/activity_share_data.xml" value="0.15833333333333333" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/sharedata/src/main/res/layout/fragment_share_data.xml" value="0.14649122807017545" />
         <entry key="..\:/AndroidStudioProjects/EverythinginAndroidJava/app/sharedpreference/src/main/res/layout/activity_share_preference.xml" value="0.19692307692307692" />

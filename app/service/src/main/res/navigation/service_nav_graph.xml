@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/service_nav_graph"
+    app:startDestination="@id/serviceDashboardFragment">
+
+    <fragment
+        android:id="@+id/serviceDashboardFragment"
+        android:name="com.example.service.ServiceDashboardFragment"
+        android:label="Service"
+        tools:layout="@layout/fragment_service_dashboard" >
+        <action
+            android:id="@+id/action_serviceDashboardFragment_to_boundedServiceFragment"
+            app:destination="@id/boundedServiceFragment" />
+        <action
+            android:id="@+id/action_serviceDashboardFragment_to_foregroundServiceFragment"
+            app:destination="@id/foregroundServiceFragment" />
+        <action
+            android:id="@+id/action_serviceDashboardFragment_to_normalServiceFragment"
+            app:destination="@id/normalServiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/boundedServiceFragment"
+        android:name="com.example.service.BoundedServiceFragment"
+        android:label="Bounded Service"
+        tools:layout="@layout/fragment_bounded_service" />
+
+    <fragment
+        android:id="@+id/foregroundServiceFragment"
+        android:name="com.example.service.ForegroundServiceFragment"
+        android:label="Foreground Service"
+        tools:layout="@layout/fragment_foreground_service" />
+
+    <fragment
+        android:id="@+id/normalServiceFragment"
+        android:name="com.example.service.NormalServiceFragment"
+        android:label="Normal Service"
+        tools:layout="@layout/fragment_normal_service" />
+</navigation>
