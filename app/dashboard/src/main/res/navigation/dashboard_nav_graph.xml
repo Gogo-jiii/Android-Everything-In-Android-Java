@@ -178,6 +178,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_service_nav_graph"
             app:destination="@id/service_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_broadcast_receiver_nav_graph"
+            app:destination="@id/broadcast_receiver_nav_graph" />
 
     </fragment>
 
@@ -237,4 +240,5 @@
     <include app:graph="@navigation/sqlite_nav_graph" />
     <include app:graph="@navigation/room_nav_graph" />
     <include app:graph="@navigation/service_nav_graph" />
+    <include app:graph="@navigation/broadcast_receiver_nav_graph" />
 </navigation>
