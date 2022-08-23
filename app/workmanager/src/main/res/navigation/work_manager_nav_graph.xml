@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/work_manager_nav_graph"
+    app:startDestination="@id/workManagerFragment">
+
+    <fragment
+        android:id="@+id/workManagerFragment"
+        android:name="com.example.workmanager.WorkManagerFragment"
+        android:label="Work Manager"
+        tools:layout="@layout/fragment_work_manager" />
+</navigation>

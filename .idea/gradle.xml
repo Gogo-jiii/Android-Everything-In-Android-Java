@@ -77,6 +77,7 @@
             <option value="$PROJECT_DIR$/app/viewpager" />
             <option value="$PROJECT_DIR$/app/volley" />
             <option value="$PROJECT_DIR$/app/webview" />
+            <option value="$PROJECT_DIR$/app/workmanager" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Work Manager</string>
+    <string name="start_one_time_work">start one time work</string>
+    <string name="stop_one_time_work">stop one time work</string>
+    <string name="get_one_time_work_updates">get one time work updates</string>
+    <string name="start_periodic_work">start periodic work</string>
+    <string name="get_periodic_work_updates">get periodic work updates</string>
+    <string name="stop_periodic_work">stop periodic work</string>
+    <string name="start_foreground_work">start Foreground work</string>
+    <string name="get_foreground_work_updates">get Foreground work updates</string>
+    <string name="stop_foreground_work">stop Foreground work</string>
+</resources>

@@ -93,4 +93,5 @@ dependencies {
     implementation project(':app:service')
     implementation project(':app:broadcastreceiver')
     implementation project(':app:jobschedular')
+    implementation project(':app:workmanager')
 }
