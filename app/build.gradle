@@ -99,4 +99,5 @@ dependencies {
     implementation project(':app:room')
     implementation project(':app:service')
     implementation project(':app:broadcastreceiver')
+    implementation project(':app:jobschedular')
 }

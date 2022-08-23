@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_schedular_nav_graph"
+    app:startDestination="@id/jobSchedularFragment">
+
+    <fragment
+        android:id="@+id/jobSchedularFragment"
+        android:name="com.example.jobschedular.JobSchedularFragment"
+        android:label="Job Scheduler"
+        tools:layout="@layout/fragment_job_schedular" />
+</navigation>
