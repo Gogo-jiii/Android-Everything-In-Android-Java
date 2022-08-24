@@ -187,6 +187,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_work_manager_nav_graph"
             app:destination="@id/work_manager_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_user_location_nav_graph"
+            app:destination="@id/user_location_nav_graph" />
 
     </fragment>
 
@@ -249,4 +252,5 @@
     <include app:graph="@navigation/broadcast_receiver_nav_graph" />
     <include app:graph="@navigation/job_schedular_nav_graph" />
     <include app:graph="@navigation/work_manager_nav_graph" />
+    <include app:graph="@navigation/user_location_nav_graph" />
 </navigation>

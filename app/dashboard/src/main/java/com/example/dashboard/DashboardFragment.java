@@ -40,7 +40,7 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             "Bottom Navigation", "Persistent Bottom Sheet", "Modal Bottom Sheet", "View Pager", "Tab Layout", "Navigation Drawer", "Menu", "Runtime Permissions",
             "Validation", "Notifications", "Retrofit", "Volley", "GSON", "Picasso", "Glide", "String Formatting", "Storage", "File Picker", "Share Data",
             "Biometric Auth", "Picture In Picture", "Pick Image From Gallery", "Encryption", "Camera", "SQLite", "Room", "Service",
-    "Broadcast Receiver", "Job Scheduler", "Work Manager"};
+    "Broadcast Receiver", "Job Scheduler", "Work Manager", "User Location"};
 
     RecyclerView recyclerView;
     private ToolbarManager toolbarManager;
@@ -320,6 +320,9 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
             case WORK_MANAGER:
                 navController.navigate(R.id.action_dashboardFragment_to_work_manager_nav_graph);
                 break;
+            case USER_LOCATION:
+                navController.navigate(R.id.action_dashboardFragment_to_user_location_nav_graph);
+                break;
         }
     }
 
@@ -385,7 +388,8 @@ public class DashboardFragment extends Fragment implements DashboardAdapter.OnRe
         SERVICE,
         BROADCAST_RECEIVER,
         JOB_SCHEDULER,
-        WORK_MANAGER;
+        WORK_MANAGER,
+        USER_LOCATION;
 
         private static DashboardFragment.DashboardType[] list = DashboardFragment.DashboardType.values();
 

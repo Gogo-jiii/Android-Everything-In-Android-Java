@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">User Location</string>
+    <string name="get_location">get location</string>
+    <string name="get_address">get Address</string>
+</resources>
