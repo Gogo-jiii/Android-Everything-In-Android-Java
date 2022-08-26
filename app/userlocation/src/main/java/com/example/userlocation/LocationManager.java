@@ -3,6 +3,7 @@ package com.example.userlocation;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Looper;
@@ -47,6 +48,9 @@ public class LocationManager {
     private void init(Context context) {
         this.context = context;
         this.fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context);
+        Intent intent = new Intent("local_broadcast");
+        StringBuilder stringBuilder = new StringBuilder();
+
         if(context instanceof Activity){
             activity = (Activity) context;
         }
@@ -55,11 +59,7 @@ public class LocationManager {
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(@NonNull LocationResult locationResult) {
-                for (Location location : locationResult.getLocations()) {
-                    if (location != null) {
 
-                    }
-                }
             }
         };
 

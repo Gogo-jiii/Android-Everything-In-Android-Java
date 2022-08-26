@@ -95,4 +95,5 @@ dependencies {
     implementation project(':app:jobschedular')
     implementation project(':app:workmanager')
     implementation project(':app:userlocation')
+    implementation project(':app:googlesignin')
 }

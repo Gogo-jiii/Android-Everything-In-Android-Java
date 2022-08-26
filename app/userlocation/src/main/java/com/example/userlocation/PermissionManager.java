@@ -66,6 +66,13 @@ public class PermissionManager {
         ActivityCompat.requestPermissions(activity, permissions, requestCode);
     }
 
+    boolean handlePermissionResult(int[] grantResults) {
+        if (grantResults.length > 0) {
+            return grantResults[0] != PackageManager.PERMISSION_DENIED;
+        }
+        return false;
+    }
+
     boolean handleApproximateLocationPermissionResult(int[] grantResults) {
 
         if (grantResults.length > 0) {
@@ -101,12 +108,10 @@ public class PermissionManager {
             if (ActivityCompat.shouldShowRequestPermissionRationale(activity,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
                 showMessageOKCancel("You need to allow access to the permission(s)!",
-                        (dialog, which) -> {
-                            askPermissions(activity,
-                                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
-                                            Manifest.permission.CAMERA},
-                                    requestCode);
-                        });
+                        (dialog, which) -> askPermissions(activity,
+                                new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                                        Manifest.permission.CAMERA},
+                                requestCode));
             }
         }
     }

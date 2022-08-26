@@ -7,6 +7,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="Android Studio java home" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -34,6 +35,7 @@
             <option value="$PROJECT_DIR$/app/fragment" />
             <option value="$PROJECT_DIR$/app/get_text_from_edit_text" />
             <option value="$PROJECT_DIR$/app/glide" />
+            <option value="$PROJECT_DIR$/app/googlesignin" />
             <option value="$PROJECT_DIR$/app/gson" />
             <option value="$PROJECT_DIR$/app/imageview" />
             <option value="$PROJECT_DIR$/app/interfacecallback" />

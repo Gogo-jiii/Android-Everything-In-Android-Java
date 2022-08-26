@@ -4,6 +4,7 @@ import android.Manifest;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +12,14 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.work.BackoffPolicy;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
 
 import com.example.commonmodule.ToolbarManager;
 import com.example.userlocation.databinding.FragmentUserLocationBinding;
@@ -21,7 +27,9 @@ import com.example.userlocation.databinding.FragmentUserLocationBinding;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
+@RequiresApi(api = Build.VERSION_CODES.Q)
 public class UserLocationFragment extends Fragment {
 
     FragmentUserLocationBinding binding;
@@ -29,10 +37,12 @@ public class UserLocationFragment extends Fragment {
     private NavController navController;
     private PermissionManager permissionManager;
     private LocationManager locationManager;
+    private WorkRequest foregroundWorkRequest;
 
     private final String[] foreground_location_permissions = {Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION};
 
+    private final String[] background_location_permissions = {Manifest.permission.ACCESS_BACKGROUND_LOCATION};
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -62,7 +72,26 @@ public class UserLocationFragment extends Fragment {
                 getAddress();
             }
         });
+
+        binding.btnGetBackgroundLocation.setOnClickListener(v -> {
+            if (!permissionManager.checkPermissions(background_location_permissions)) {
+                permissionManager.askPermissions(requireActivity(),
+                        background_location_permissions, 200);
+            } else {
+                getBackgroundLocation();
+            }
+        });
         return binding.getRoot();
+    }
+
+    private void getBackgroundLocation() {
+        foregroundWorkRequest = new OneTimeWorkRequest.Builder(BackgroundLocationWork.class)
+                .addTag("LocationWork")
+                .setBackoffCriteria(BackoffPolicy.LINEAR,
+                        OneTimeWorkRequest.MIN_BACKOFF_MILLIS, TimeUnit.SECONDS)
+                .build();
+
+        WorkManager.getInstance(requireActivity()).enqueue(foregroundWorkRequest);
     }
 
     private void getAddress() {
@@ -111,6 +140,8 @@ public class UserLocationFragment extends Fragment {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 100 && permissionManager.handlePreciseAndApproximateLocationPermissionsResult(grantResults)) {
             getLocation();
+        }else if (requestCode == 200 && permissionManager.handlePermissionResult(grantResults)) {
+            getBackgroundLocation();
         }
     }
 
