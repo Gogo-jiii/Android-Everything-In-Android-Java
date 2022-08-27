@@ -193,6 +193,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_google_signin_nav_graph"
             app:destination="@id/google_signin_nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_facebook_signin_nav_graph"
+            app:destination="@id/facebook_signin_nav_graph" />
 
     </fragment>
 
@@ -257,4 +260,5 @@
     <include app:graph="@navigation/work_manager_nav_graph" />
     <include app:graph="@navigation/user_location_nav_graph" />
     <include app:graph="@navigation/google_signin_nav_graph" />
+    <include app:graph="@navigation/facebook_signin_nav_graph" />
 </navigation>

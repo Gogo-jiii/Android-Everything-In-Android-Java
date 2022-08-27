@@ -103,4 +103,5 @@ dependencies {
     implementation project(':app:workmanager')
     implementation project(':app:userlocation')
     implementation project(':app:googlesignin')
+    implementation project(':app:facebooksignin')
 }
